@@ -10,7 +10,7 @@ public class Dice : MonoBehaviour
     private Rigidbody rb;
     private GameManager pointManager;
 
-    private void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         pointManager = GameManager.Instance;
@@ -18,13 +18,20 @@ public class Dice : MonoBehaviour
 
     private void Update()
     {
-        if (hasNumber)
-            return;
-
         if (rb.velocity.magnitude <= 0.01f)
         {
+            if (hasNumber)
+                return;
+
             hasNumber = true;
             pointManager.AddPoints(value);
         }
+        else
+            hasNumber = false;
+    }
+
+    public void AddForce(Vector3 force, float forcePower)
+    {
+        rb.AddForce(force * forcePower);
     }
 }

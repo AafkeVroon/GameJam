@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [SerializeField] private int amountOfDices = 3;
+    [SerializeField] private float throwForce = 5;
     [SerializeField] private int maxPoints;
     [SerializeField] private GameObject dicePrefab;
 
@@ -29,8 +30,20 @@ public class GameManager : MonoBehaviour
         MaxPoints += amount;
     }
 
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            ThrowDice();
+        }
+    }
+
     private void ThrowDice()
     {
-        
+        for (int i = 0; i < amountOfDices; i++)
+        {
+            GameObject dice = Instantiate(dicePrefab, cam.transform.position, cam.transform.rotation);
+            dice.GetComponent<Dice>().AddForce(cam.transform.forward, throwForce);
+        }
     }
 }
