@@ -5,13 +5,15 @@ using UnityEngine;
 public class Dice : MonoBehaviour
 {
     public int value;
+    public bool hasNumber;
 
     private Rigidbody rb;
-    private bool hasNumber;
+    private PointManager pointManager;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        pointManager = PointManager.Instance;
     }
 
     private void Update()
@@ -19,17 +21,10 @@ public class Dice : MonoBehaviour
         if (hasNumber)
             return;
 
-        if (rb.velocity.magnitude <= 0.06f)
+        if (rb.velocity.magnitude <= 0.01f)
         {
             hasNumber = true;
-            GetNumber();
-            Debug.Log(transform.up);
+            pointManager.AddPoints(value);
         }
-    }
-
-    private int GetNumber()
-    {
-        
-        return 1;
     }
 }

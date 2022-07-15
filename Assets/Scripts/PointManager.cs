@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class PointManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static PointManager Instance;
+
+    [SerializeField] private int amountOfDices = 3;
+    [SerializeField] private int maxPoints;
+
+    public int MaxPoints { get { return maxPoints; } set { maxPoints = value; } }
+
+    private void Awake()
     {
-        
+        if (Instance != null)
+            Destroy(gameObject);
+        else
+            Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddPoints(int amount)
     {
-        
+        MaxPoints += amount;
     }
 }
