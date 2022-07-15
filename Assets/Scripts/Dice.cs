@@ -8,12 +8,12 @@ public class Dice : MonoBehaviour
     public bool hasNumber;
 
     private Rigidbody rb;
-    private PointManager pointManager;
+    private GameManager pointManager;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        pointManager = PointManager.Instance;
+        pointManager = GameManager.Instance;
     }
 
     private void Update()

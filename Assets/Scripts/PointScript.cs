@@ -8,11 +8,11 @@ public class PointScript : MonoBehaviour
 
     public int CurrentAmountPoints { get { return currentAmountPoints; } set { currentAmountPoints = value; } }
 
-    private PointManager pointManager;
+    private GameManager pointManager;
 
     private void Start()
     {
-        pointManager = PointManager.Instance;
+        pointManager = GameManager.Instance;
     }
 
     public void UsePoint(int amount)
