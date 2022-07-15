@@ -5,32 +5,34 @@ using UnityEngine;
 public class Dice : MonoBehaviour
 {
     [SerializeField] private List<Vector3> directions;
-    [SerializeField] private List<int> diceValue;
+    [SerializeField] private List<int> diceRotation;
 
     private Rigidbody rb;
     private bool hasNumber;
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody>();
+
         if(directions.Count == 0)
         {
             directions.Add(Vector3.up);
-            diceValue.Add(6);
+            diceRotation.Add(0);//1
             directions.Add(Vector3.down);
-            diceValue.Add(1);
+            diceRotation.Add(6);//6
 
             directions.Add(Vector3.forward);
-            diceValue.Add(4);
+            diceRotation.Add(2);//2
             directions.Add(Vector3.back);
-            diceValue.Add(3);
+            diceRotation.Add(5);//5
 
             directions.Add(Vector3.right);
-            diceValue.Add(2);
+            diceRotation.Add(3);//3
             directions.Add(Vector3.left);
-            diceValue.Add(5);
+            diceRotation.Add(4);//4
         }
 
-        GetNumber();
+        //GetNumber();
     }
 
     private void Update()
@@ -42,13 +44,19 @@ public class Dice : MonoBehaviour
         {
             hasNumber = true;
             GetNumber();
+            Debug.Log(transform.up);
         }
     }
 
-    private Vector3 GetNumber()
+    private int GetNumber()
     {
-        Vector3 currentRotation = transform.localRotation.eulerAngles;
-        Debug.Log(currentRotation);
-        return currentRotation;
+        int currentValue = 0;
+        Vector3 vectorTest = transform.up;
+
+        if(vectorTest == Vector3.up)
+        {
+
+        }
+        return 1;
     }
 }
