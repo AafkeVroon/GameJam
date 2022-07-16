@@ -70,7 +70,26 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 521ca907d08c1ed469dd1c7ae106cf09,
         type: 3}
       propertyPath: m_Name
-      value: WallSupport1
+      value: WallSupport1 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 521ca907d08c1ed469dd1c7ae106cf09, type: 3}
+--- !u!1 &7380373983810222903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 521ca907d08c1ed469dd1c7ae106cf09,
+    type: 3}
+  m_PrefabInstance: {fileID: 7686856046220396134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7961121863851453604
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7380373983810222903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6240001, y: 2.3800004, z: 0.6240001}
+  m_Center: {x: 0, y: 1.1900002, z: 0}
