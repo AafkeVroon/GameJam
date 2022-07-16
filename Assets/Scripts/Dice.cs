@@ -8,12 +8,12 @@ public class Dice : MonoBehaviour
     public bool hasNumber;
 
     private Rigidbody rb;
-    private GameManager pointManager;
+    private GameManager gameManager;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        pointManager = GameManager.Instance;
+        gameManager = GameManager.Instance;
     }
 
     private void Update()
@@ -24,7 +24,7 @@ public class Dice : MonoBehaviour
                 return;
 
             hasNumber = true;
-            pointManager.AddPoints(value);
+            gameManager.AddPoints(value);
         }
         else
             hasNumber = false;

@@ -6,6 +6,11 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float desiredWalkTime = 2;
 
+    public bool goForward;
+    public bool goBack;
+    public bool goLeft;
+    public bool goRight;
+
     private PointScript pointScript;
     private bool canMove;
     private Animator anim;
@@ -30,28 +35,28 @@ public class PlayerMovement : MonoBehaviour
     {
         if (pointScript.CurrentAmountPoints > 0)
         {
-            if (Input.GetKeyDown(KeyCode.W) && canMove)
+            if (Input.GetKeyDown(KeyCode.W) && canMove && goForward)
             {
                 nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z + 2);
                 currentPosition = transform.position;
                 transform.rotation = Quaternion.LookRotation(Vector3.forward);
                 UseAction();
             }
-            if (Input.GetKeyDown(KeyCode.S) && canMove)
+            if (Input.GetKeyDown(KeyCode.S) && canMove && goBack)
             {
                 nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z - 2);
                 currentPosition = transform.position;
                 transform.rotation = Quaternion.LookRotation(Vector3.back);
                 UseAction();
             }
-            if (Input.GetKeyDown(KeyCode.D) && canMove)
+            if (Input.GetKeyDown(KeyCode.D) && canMove && goRight)
             {
                 nextPosition = new Vector3(currentPosition.x + 2, currentPosition.y, currentPosition.z);
                 currentPosition = transform.position;
                 transform.rotation = Quaternion.LookRotation(Vector3.right);
                 UseAction();
             }
-            if (Input.GetKeyDown(KeyCode.A) && canMove)
+            if (Input.GetKeyDown(KeyCode.A) && canMove && goLeft)
             {
                 nextPosition = new Vector3(currentPosition.x - 2, currentPosition.y, currentPosition.z);
                 currentPosition = transform.position;
