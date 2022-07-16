@@ -26,6 +26,7 @@ public class Dice : MonoBehaviour
 
             hasNumber = true;
             gameManager.AddPoints(value);
+            Debug.Log("JUHDGIHVDWGIDWGUIDWGVHDW");
         }
         else
             hasNumber = false;

@@ -24,7 +24,7 @@ public class TileChecker : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Tile"))
+        if (other.gameObject.CompareTag("Tile") || other.gameObject.CompareTag("Gate"))
         {
             switch (direction)
             {
