@@ -65,18 +65,18 @@ public class PlayerMovement : MonoBehaviour
                 currentPosition = transform.position;
                 transform.rotation = Quaternion.LookRotation(Vector3.left);
                 UseAction();
-            }
+            }    
+        }
 
-            if (!canMove)
+        if (!canMove)
+        {
+            elapsidedTime += Time.deltaTime;
+            float percentage = elapsidedTime / desiredWalkTime;
+            transform.position = Vector3.Lerp(currentPosition, nextPosition, percentage);
+            if (percentage > 0.97f)
             {
-                elapsidedTime += Time.deltaTime;
-                float percentage = elapsidedTime / desiredWalkTime;
-                transform.position = Vector3.Lerp(currentPosition, nextPosition, percentage);
-                if (percentage > 0.97f)
-                {
-                    transform.position = new Vector3(nextPosition.x, nextPosition.y, nextPosition.z);
-                    currentPosition = transform.position;
-                }
+                transform.position = new Vector3(nextPosition.x, nextPosition.y, nextPosition.z);
+                currentPosition = transform.position;
             }
         }
     }
