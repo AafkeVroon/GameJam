@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator SetCanMoveToTrue()
     {
-        yield return new WaitForSeconds(desiredWalkTime + 1f);
+        yield return new WaitForSeconds(desiredWalkTime + 0.7f);
         elapsidedTime = 0;
         canMove = true;
     }

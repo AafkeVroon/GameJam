@@ -10,10 +10,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float throwForce = 5;
     [SerializeField] private int maxPoints;
     [SerializeField] private GameObject dicePrefab;
+    [SerializeField] private List<GameObject> characterPrefabs;
 
     public int MaxPoints { get { return maxPoints; } set { maxPoints = value; } }
 
     private Camera cam;
+    private int amountOfCharacters;
+    private List<GameObject> players;
 
     private void Awake()
     {
@@ -25,25 +28,30 @@ public class GameManager : MonoBehaviour
         cam = Camera.main;
     }
 
+    private void Start()
+    {
+        amountOfCharacters = characterPrefabs.Count;
+    }
+
     public void AddPoints(int amount)
     {
         MaxPoints += amount;
     }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            ThrowDice();
-        }
-    }
-
-    private void ThrowDice()
+    public void ThrowDice()
     {
         for (int i = 0; i < amountOfDices; i++)
         {
             GameObject dice = Instantiate(dicePrefab, cam.transform.position, cam.transform.rotation);
             dice.GetComponent<Dice>().AddForce(cam.transform.forward, throwForce);
+        }
+    }
+
+    private void AddPlayers()
+    {
+        for (int i = 0; i < amountOfCharacters; i++)
+        {
+
         }
     }
 }
