@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowObject : MonoBehaviour
 {
-    [SerializeField] private GameObject followGameObject;
+    public GameObject followGameObject;
 
     private void Start()
     {

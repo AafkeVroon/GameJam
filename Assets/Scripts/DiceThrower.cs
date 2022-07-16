@@ -5,14 +5,16 @@ using UnityEngine;
 public class DiceThrower : MonoBehaviour
 {
     public bool isTurn;
+    public bool canThrow;
 
     private GameManager gameManager;
-    private bool canThrow;
 
     private void Start()
     {
         gameManager = GameManager.Instance;
         canThrow = true;
+        if (gameObject.CompareTag("Player"))
+            isTurn = true;
     }
 
     private void Update()
@@ -22,7 +24,15 @@ public class DiceThrower : MonoBehaviour
 
         if (canThrow)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (gameObject.CompareTag("Player"))
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    gameManager.ThrowDice();
+                    canThrow = false;
+                }
+            }
+            else
             {
                 gameManager.ThrowDice();
                 canThrow = false;

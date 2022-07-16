@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float desiredWalkTime = 2;
+    [SerializeField] private GameObject tileCheckerPrefab;
 
     public bool goForward;
     public bool goBack;
@@ -22,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     {
         pointScript = GetComponent<PointScript>();
         anim = GetComponent<Animator>();
+        GameObject checker = Instantiate(tileCheckerPrefab);
+        checker.GetComponent<FollowObject>().followGameObject = gameObject;
         canMove = true;
         currentPosition = transform.position;
     }

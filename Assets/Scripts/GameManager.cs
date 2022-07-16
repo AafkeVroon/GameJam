@@ -11,12 +11,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int maxPoints;
     [SerializeField] private GameObject dicePrefab;
     [SerializeField] private List<GameObject> characterPrefabs;
+    [SerializeField] private List<GameObject> characterSpawnpoints;
 
     public int MaxPoints { get { return maxPoints; } set { maxPoints = value; } }
 
     private Camera cam;
     private int amountOfCharacters;
-    private List<GameObject> players;
+    private int currentTurn;
+    private List<GameObject> characters = new List<GameObject>();
 
     private void Awake()
     {
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         amountOfCharacters = characterPrefabs.Count;
+        SpawnCharacters();
     }
 
     public void AddPoints(int amount)
@@ -47,11 +50,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void AddPlayers()
+    private void SpawnCharacters()
     {
         for (int i = 0; i < amountOfCharacters; i++)
         {
+            GameObject character = Instantiate(characterPrefabs[i], characterSpawnpoints[i].transform.position, characterSpawnpoints[i].transform.rotation);
+            characters.Add(character);
+        }
+    }
 
+    public void NextTurn()
+    {
+        if (currentTurn < characters.Count - 1)
+        {
+            currentTurn++;
+            characters[currentTurn].GetComponent<DiceThrower>().isTurn = true;
+            characters[currentTurn].GetComponent<DiceThrower>().canThrow = true;
+        }
+        else
+        {
+            currentTurn = 0;
         }
     }
 }

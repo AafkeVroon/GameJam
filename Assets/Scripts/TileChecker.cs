@@ -5,7 +5,13 @@ using UnityEngine;
 public class TileChecker : MonoBehaviour
 {
     [SerializeField] private int direction;
-    [SerializeField] private PlayerMovement playerMovement;
+
+    public PlayerMovement playerMovement;
+
+    private void Start()
+    {
+        playerMovement = GetComponentInParent<FollowObject>().followGameObject.GetComponent<PlayerMovement>();
+    }
 
     private void OnTriggerStay(Collider other)
     {
