@@ -88,6 +88,7 @@ MonoBehaviour:
     type: 3}
   movement: 0
   attackRange: 3
+  attackDamage: 3
   attackPointCost: 3
   goForward: 0
   goBack: 0

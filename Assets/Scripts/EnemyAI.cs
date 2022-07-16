@@ -17,6 +17,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private GameObject tileCheckerPrefab;
     [SerializeField] private Movement movement;
     [SerializeField] private int attackRange = 1;
+    [SerializeField] private int attackDamage = 1;
     [SerializeField] private int attackPointCost = 2;
 
     public bool goForward;
@@ -55,7 +56,7 @@ public class EnemyAI : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer <= 0)
             {
-                Debug.Log("qQQQQqqqqQQQQQQQqqqqqqqQQQQQQQQ1");
+                //Debug.Log("qQQQQqqqqQQQQQQQqqqqqqqQQQQQQQQ1");
                 nextMove = true;
                 timer = 0.5f;
                 CheckAction();
@@ -86,7 +87,7 @@ public class EnemyAI : MonoBehaviour
         //anim.SetTrigger("Hop");
         //pointScript.UsePoint(1);
         StartCoroutine(SetCanMoveToTrue());
-        Debug.Log("JFHFBFJFFJFJFJFJFJFJFJFJFJ");
+        //Debug.Log("JFHFBFJFFJFJFJFJFJFJFJFJFJ");
     }
 
     private void CheckAction()
@@ -108,7 +109,7 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                Debug.Log("0000009998888111111111");
+                //Debug.Log("0000009998888111111111");
                 Move();
             }
         }
@@ -173,7 +174,13 @@ public class EnemyAI : MonoBehaviour
         elapsidedTime = 0;
         canMove = true;
         nextMove = false;
-        Debug.Log("WHYDONTYOUWORRHRBDFHDFHF");
+        yield return new WaitForSeconds(0.5f);
+        if (pointScript.CurrentAmountPoints > 0)
+        {
+            canMove = true;
+            nextMove = false;
+        }
+        //Debug.Log("WHYDONTYOUWORRHRBDFHDFHF");
     }
 
     private void OnDrawGizmos()

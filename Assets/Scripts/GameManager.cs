@@ -32,10 +32,15 @@ public class GameManager : MonoBehaviour
         SpawnCharacters();
     }
 
+    private void Start()
+    {
+        diceSpawnpoint = PlayerObject.transform;
+    }
+
     public void AddPoints(int amount)
     {
-        MaxPoints += amount;
-        characters[currentTurn].GetComponent<PointScript>().CurrentAmountPoints = MaxPoints;
+        MaxPoints = amount;
+        characters[currentTurn].GetComponent<PointScript>().CurrentAmountPoints += MaxPoints;
         Debug.Log(MaxPoints);
     }
 
@@ -43,8 +48,10 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < amountOfDices; i++)
         {
-            GameObject dice = Instantiate(dicePrefab, diceSpawnpoint.position, diceSpawnpoint.rotation);
-            dice.GetComponent<Dice>().AddForce(diceSpawnpoint.forward, throwForce);
+            GameObject dice = Instantiate(dicePrefab, new Vector3(diceSpawnpoint.position.x, diceSpawnpoint.position.y, diceSpawnpoint.position.z * Vector3.forward.z), diceSpawnpoint.rotation);
+            dice.transform.rotation = new Quaternion(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360), 0);
+            dice.GetComponent<Rigidbody>().AddForce(diceSpawnpoint.forward * throwForce, ForceMode.Impulse);
+            dice.GetComponent<Rigidbody>().AddTorque(diceSpawnpoint.up * throwForce * 1.5f * throwForce * 1.5f);
         }
     }
 

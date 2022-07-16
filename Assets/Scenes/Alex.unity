@@ -10442,7 +10442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountOfDices: 1
-  throwForce: 250
+  throwForce: 8
   maxPoints: 0
   dicePrefab: {fileID: 5025266602348806400, guid: dd8aafb3dce5ee64bb002f94ee55433a,
     type: 3}
