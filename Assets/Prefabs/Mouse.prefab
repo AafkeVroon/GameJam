@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6903463533773330917}
   - component: {fileID: 1101915169}
   - component: {fileID: 1101915168}
+  - component: {fileID: 1806719787}
   m_Layer: 0
   m_Name: Mouse
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,6 +69,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   desiredWalkTime: 0.5
+  tileCheckerPrefab: {fileID: 7412906721748837891, guid: b139b765544520f44a3803b59fa89082,
+    type: 3}
+  goForward: 0
+  goBack: 0
+  goLeft: 0
+  goRight: 0
 --- !u!114 &1101915168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +88,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAmountPoints: 100
+  pointsText: {fileID: 0}
+--- !u!114 &1806719787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903463533773330923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6303daff8e9773a49be9ab7531f060e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTurn: 0
+  canThrow: 0
 --- !u!1001 &323348258887025459
 PrefabInstance:
   m_ObjectHideFlags: 0
