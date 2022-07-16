@@ -6,11 +6,20 @@ public class TileChecker : MonoBehaviour
 {
     [SerializeField] private int direction;
 
-    public PlayerMovement playerMovement;
+    private PlayerMovement playerMovement;
+    private EnemyAI enemyAI;
 
     private void Start()
     {
-        playerMovement = GetComponentInParent<FollowObject>().followGameObject.GetComponent<PlayerMovement>();
+        GameObject followObject = GetComponentInParent<FollowObject>().followGameObject;
+        if (followObject.CompareTag("Player"))
+        {
+            playerMovement = followObject.GetComponent<PlayerMovement>();
+        }
+        else
+        {
+            enemyAI = followObject.GetComponent<EnemyAI>();
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -20,16 +29,28 @@ public class TileChecker : MonoBehaviour
             switch (direction)
             {
                 case 0:
-                    playerMovement.goForward = true;
+                    if (playerMovement)
+                        playerMovement.goForward = true;
+                    else
+                        enemyAI.goForward = true;
                     break;
                 case 1:
-                    playerMovement.goBack = true;
+                    if (playerMovement)
+                        playerMovement.goBack = true;
+                    else
+                        enemyAI.goBack = true;
                     break;
                 case 2:
-                    playerMovement.goLeft = true;
+                    if (playerMovement)
+                        playerMovement.goLeft = true;
+                    else
+                        enemyAI.goLeft = true;
                     break;
                 case 3:
-                    playerMovement.goRight = true;
+                    if (playerMovement)
+                        playerMovement.goRight = true;
+                    else
+                        enemyAI.goRight = true;
                     break;
             }
         }
@@ -38,16 +59,28 @@ public class TileChecker : MonoBehaviour
             switch (direction)
             {
                 case 0:
-                    playerMovement.goForward = false;
+                    if (playerMovement)
+                        playerMovement.goForward = false;
+                    else
+                        enemyAI.goForward = false;
                     break;
                 case 1:
-                    playerMovement.goBack = false;
+                    if (playerMovement)
+                        playerMovement.goBack = false;
+                    else
+                        enemyAI.goBack = false;
                     break;
                 case 2:
-                    playerMovement.goLeft = false;
+                    if (playerMovement)
+                        playerMovement.goLeft = false;
+                    else
+                        enemyAI.goLeft = false;
                     break;
                 case 3:
-                    playerMovement.goRight = false;
+                    if (playerMovement)
+                        playerMovement.goRight = false;
+                    else
+                        enemyAI.goRight = false;
                     break;
             }
         }
@@ -60,16 +93,28 @@ public class TileChecker : MonoBehaviour
             switch (direction)
             {
                 case 0:
-                    playerMovement.goForward = false;
+                    if (playerMovement)
+                        playerMovement.goForward = false;
+                    else
+                        enemyAI.goForward = false;
                     break;
                 case 1:
-                    playerMovement.goBack = false;
+                    if (playerMovement)
+                        playerMovement.goBack = false;
+                    else
+                        enemyAI.goBack = false;
                     break;
                 case 2:
-                    playerMovement.goLeft = false;
+                    if (playerMovement)
+                        playerMovement.goLeft = false;
+                    else
+                        enemyAI.goLeft = false;
                     break;
                 case 3:
-                    playerMovement.goRight = false;
+                    if (playerMovement)
+                        playerMovement.goRight = false;
+                    else
+                        enemyAI.goRight = false;
                     break;
             }
         }

@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     public void AddPoints(int amount)
     {
         MaxPoints += amount;
+        characters[currentTurn].GetComponent<PointScript>().CurrentAmountPoints = MaxPoints;
     }
 
     public void ThrowDice()

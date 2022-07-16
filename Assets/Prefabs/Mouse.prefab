@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1101915169}
   - component: {fileID: 1101915168}
   - component: {fileID: 1806719787}
+  - component: {fileID: 1806719788}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Player
@@ -87,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed91d36ebae4cfa43949cadf5abb0569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmountPoints: 100
+  currentAmountPoints: 5
   pointsText: {fileID: 0}
 --- !u!114 &1806719787
 MonoBehaviour:
@@ -103,6 +104,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTurn: 0
   canThrow: 0
+--- !u!114 &1806719788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903463533773330923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee92fd6e437daee4db3db180be134608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  healthUI: {fileID: 0}
+  onHealthZero:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &323348258887025459
 PrefabInstance:
   m_ObjectHideFlags: 0
