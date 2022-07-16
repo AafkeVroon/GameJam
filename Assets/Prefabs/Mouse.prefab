@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6903463533773330922}
   - component: {fileID: 6903463533773330917}
+  - component: {fileID: 1101915169}
+  - component: {fileID: 1101915168}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Untagged
@@ -24,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6903463533773330923}
-  m_LocalRotation: {x: -0, y: -0.047743388, z: -0, w: 0.99885964}
+  m_LocalRotation: {x: 0, y: -0.04774273, z: 0, w: 0.9988597}
   m_LocalPosition: {x: -1.96, y: 0.584, z: -4.63}
   m_LocalScale: {x: 0.36231533, y: 0.36231533, z: 0.36231533}
   m_ConstrainProportionsScale: 0
@@ -53,6 +55,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1101915169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903463533773330923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7f9e1c9e33158544b242e19dfcf8274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredWalkTime: 1
+--- !u!114 &1101915168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903463533773330923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed91d36ebae4cfa43949cadf5abb0569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAmountPoints: 100
 --- !u!1001 &323348258887025459
 PrefabInstance:
   m_ObjectHideFlags: 0
