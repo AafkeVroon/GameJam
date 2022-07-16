@@ -5,15 +5,26 @@ using UnityEngine;
 public class PointScript : MonoBehaviour
 {
     [SerializeField] private int currentAmountPoints;
-    [SerializeField] private int amountOfDices = 3;
 
-    public int CurrentAmountPoints { get { return currentAmountPoints; } }
+    public int CurrentAmountPoints { get { return currentAmountPoints; } set { currentAmountPoints = value; } }
+
+    private GameManager pointManager;
+
+    private void Start()
+    {
+        pointManager = GameManager.Instance;
+    }
 
     public void UsePoint(int amount)
     {
-        if (currentAmountPoints > 0 && amount <= currentAmountPoints)
-            currentAmountPoints -= amount;
+        if (CurrentAmountPoints > 0 && amount <= CurrentAmountPoints)
+            CurrentAmountPoints -= amount;
         else
             Debug.Log("No points");//Show that you have no points left
+    }
+
+    public void GetPoints()
+    {
+        CurrentAmountPoints = pointManager.MaxPoints;
     }
 }

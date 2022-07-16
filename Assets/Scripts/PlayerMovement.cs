@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private float desiredWalkTime = 2;
+
     private PointScript pointScript;
     private bool canMove;
+    private Animator anim;
+    private Vector3 nextPosition;
+    private Vector3 currentPosition;
+    private float elapsidedTime;
 
     private void Start()
     {
         pointScript = GetComponent<PointScript>();
+        anim = GetComponent<Animator>();
         canMove = true;
+        currentPosition = transform.position;
     }
 
     private void Update()
@@ -22,25 +30,45 @@ public class PlayerMovement : MonoBehaviour
     {
         if (pointScript.CurrentAmountPoints > 0)
         {
-            if(Input.GetKeyDown(KeyCode.W) && canMove)
+            if (Input.GetKeyDown(KeyCode.W) && canMove)
             {
-                transform.position += new Vector3(0, 0, 1);
+                nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z + 2);
+                currentPosition = transform.position;
+                transform.rotation = Quaternion.LookRotation(Vector3.forward);
                 UseAction();
             }
             if (Input.GetKeyDown(KeyCode.S) && canMove)
             {
-                transform.position += new Vector3(0, 0, -1);
+                nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z - 2);
+                currentPosition = transform.position;
+                transform.rotation = Quaternion.LookRotation(Vector3.back);
                 UseAction();
             }
             if (Input.GetKeyDown(KeyCode.D) && canMove)
             {
-                transform.position += new Vector3(1, 0, 0);
+                nextPosition = new Vector3(currentPosition.x + 2, currentPosition.y, currentPosition.z);
+                currentPosition = transform.position;
+                transform.rotation = Quaternion.LookRotation(Vector3.right);
                 UseAction();
             }
             if (Input.GetKeyDown(KeyCode.A) && canMove)
             {
-                transform.position += new Vector3(-1, 0, 0);
+                nextPosition = new Vector3(currentPosition.x - 2, currentPosition.y, currentPosition.z);
+                currentPosition = transform.position;
+                transform.rotation = Quaternion.LookRotation(Vector3.left);
                 UseAction();
+            }
+
+            if (!canMove)
+            {
+                elapsidedTime += Time.deltaTime;
+                float percentage = elapsidedTime / desiredWalkTime;
+                transform.position = Vector3.Lerp(currentPosition, nextPosition, percentage);
+                if (percentage > 0.97f)
+                {
+                    transform.position = new Vector3(nextPosition.x, nextPosition.y, nextPosition.z);
+                    currentPosition = transform.position;
+                }
             }
         }
     }
@@ -48,13 +76,15 @@ public class PlayerMovement : MonoBehaviour
     private void UseAction()
     {
         canMove = false;
+        anim.SetTrigger("Hop");
         pointScript.UsePoint(1);
         StartCoroutine(SetCanMoveToTrue());
     }
 
     private IEnumerator SetCanMoveToTrue()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(desiredWalkTime + 1f);
+        elapsidedTime = 0;
         canMove = true;
     }
 }

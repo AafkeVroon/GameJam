@@ -5,31 +5,33 @@ using UnityEngine;
 public class Dice : MonoBehaviour
 {
     public int value;
+    public bool hasNumber;
 
     private Rigidbody rb;
-    private bool hasNumber;
+    private GameManager pointManager;
 
-    private void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        pointManager = GameManager.Instance;
     }
 
     private void Update()
     {
-        if (hasNumber)
-            return;
-
-        if (rb.velocity.magnitude <= 0.06f)
+        if (rb.velocity.magnitude <= 0.01f)
         {
+            if (hasNumber)
+                return;
+
             hasNumber = true;
-            GetNumber();
-            Debug.Log(transform.up);
+            pointManager.AddPoints(value);
         }
+        else
+            hasNumber = false;
     }
 
-    private int GetNumber()
+    public void AddForce(Vector3 force, float forcePower)
     {
-        
-        return 1;
+        rb.AddForce(force * forcePower);
     }
 }
