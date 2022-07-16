@@ -6723,6 +6723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7f9e1c9e33158544b242e19dfcf8274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  desiredWalkTime: 2
 --- !u!114 &378341873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32607,6 +32608,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 186432034, guid: 98a384f5147a836439ae6fa98ebc32ac, type: 3}
+      propertyPath: desiredWalkTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 186432035, guid: 98a384f5147a836439ae6fa98ebc32ac, type: 3}
       propertyPath: currentAmountPoints
       value: 100
