@@ -50,12 +50,14 @@ public class EnemyAI : MonoBehaviour
         if (!pointScript.DiceThrower.isTurn)
             return;
 
-        if (!nextMove)
+        if (!nextMove && pointScript.CurrentAmountPoints > 0)
         {
             timer -= Time.deltaTime;
             if (timer <= 0)
             {
                 Debug.Log("qQQQQqqqqQQQQQQQqqqqqqqQQQQQQQQ1");
+                nextMove = true;
+                timer = 0.5f;
                 CheckAction();
             }
         }
@@ -82,15 +84,13 @@ public class EnemyAI : MonoBehaviour
     {
         canMove = false;
         //anim.SetTrigger("Hop");
-        pointScript.UsePoint(1);
+        //pointScript.UsePoint(1);
         StartCoroutine(SetCanMoveToTrue());
         Debug.Log("JFHFBFJFFJFJFJFJFJFJFJFJFJ");
     }
 
     private void CheckAction()
     {
-        nextMove = true;
-        timer = 0.05f;
         if (Physics.SphereCast(transform.position, attackRange, transform.forward, out hit))
         {
             if (hit.collider.gameObject.CompareTag("Player"))
@@ -127,6 +127,8 @@ public class EnemyAI : MonoBehaviour
                     transform.rotation = Quaternion.LookRotation(Vector3.forward);
                     UseAction();
                 }
+                else
+                    Move();
                 break;
             case 1:
                 if (canMove && goBack)
@@ -136,6 +138,8 @@ public class EnemyAI : MonoBehaviour
                     transform.rotation = Quaternion.LookRotation(Vector3.back);
                     UseAction();
                 }
+                else
+                    Move();
                 break;
             case 2:
                 if (canMove && goRight)
@@ -145,6 +149,8 @@ public class EnemyAI : MonoBehaviour
                     transform.rotation = Quaternion.LookRotation(Vector3.right);
                     UseAction();
                 }
+                else
+                    Move();
                 break;
             case 3:
                 if (canMove && goLeft)
@@ -154,6 +160,8 @@ public class EnemyAI : MonoBehaviour
                     transform.rotation = Quaternion.LookRotation(Vector3.left);
                     UseAction();
                 }
+                else
+                    Move();
                 break;
         }
     }
@@ -161,9 +169,11 @@ public class EnemyAI : MonoBehaviour
     private IEnumerator SetCanMoveToTrue()
     {
         yield return new WaitForSeconds(desiredWalkTime + 0.5f);
+        pointScript.UsePoint(1);
         elapsidedTime = 0;
         canMove = true;
         nextMove = false;
+        Debug.Log("WHYDONTYOUWORRHRBDFHDFHF");
     }
 
     private void OnDrawGizmos()

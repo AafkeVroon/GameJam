@@ -18,27 +18,30 @@ public class SideTrigger : MonoBehaviour
         if (dice.hasNumber)
             return;
 
-        switch (direction)
+        if (other.gameObject.CompareTag("Tile"))
         {
-            case 0://Up
-                dice.value = 6;
-                break;
-            case 1://Under
-                dice.value = 1;
-                break;
-            case 2://Left
-                dice.value = 5;
-                break;
-            case 3://Right
-                dice.value = 2;
-                break;
-            case 4://Front
-                dice.value = 4;
-                break;
-            case 5://Back
-                dice.value = 3;
-                break;
+            switch (direction)
+            {
+                case 0://Up
+                    dice.value = 6;
+                    break;
+                case 1://Under
+                    dice.value = 1;
+                    break;
+                case 2://Left
+                    dice.value = 5;
+                    break;
+                case 3://Right
+                    dice.value = 2;
+                    break;
+                case 4://Front
+                    dice.value = 4;
+                    break;
+                case 5://Back
+                    dice.value = 3;
+                    break;
 
+            }
         }
     }
 }

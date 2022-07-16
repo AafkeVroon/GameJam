@@ -14,6 +14,7 @@ public class Dice : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         gameManager = GameManager.Instance;
+        Destroy(gameObject, 6);
     }
 
     private void Update()
