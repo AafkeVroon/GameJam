@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7f9e1c9e33158544b242e19dfcf8274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desiredWalkTime: 1
+  desiredWalkTime: 0.5
 --- !u!114 &1101915168
 MonoBehaviour:
   m_ObjectHideFlags: 0

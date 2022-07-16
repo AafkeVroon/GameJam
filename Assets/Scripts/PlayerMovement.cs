@@ -76,13 +76,14 @@ public class PlayerMovement : MonoBehaviour
     private void UseAction()
     {
         canMove = false;
+        anim.SetTrigger("Hop");
         pointScript.UsePoint(1);
         StartCoroutine(SetCanMoveToTrue());
     }
 
     private IEnumerator SetCanMoveToTrue()
     {
-        yield return new WaitForSeconds(desiredWalkTime + 0.05f);
+        yield return new WaitForSeconds(desiredWalkTime + 1f);
         elapsidedTime = 0;
         canMove = true;
     }
