@@ -55,18 +55,16 @@ public class EnemyAI : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer <= 0)
             {
+                Debug.Log("qQQQQqqqqQQQQQQQqqqqqqqQQQQQQQQ1");
                 CheckAction();
             }
         }
+
+        LerpMove();
     }
 
     private void LerpMove()
     {
-        if (pointScript.CurrentAmountPoints > 0)
-        {
-
-        }
-
         if (!canMove)
         {
             elapsidedTime += Time.deltaTime;
@@ -86,6 +84,7 @@ public class EnemyAI : MonoBehaviour
         //anim.SetTrigger("Hop");
         pointScript.UsePoint(1);
         StartCoroutine(SetCanMoveToTrue());
+        Debug.Log("JFHFBFJFFJFJFJFJFJFJFJFJFJ");
     }
 
     private void CheckAction()
@@ -109,6 +108,7 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
+                Debug.Log("0000009998888111111111");
                 Move();
             }
         }
@@ -160,9 +160,10 @@ public class EnemyAI : MonoBehaviour
 
     private IEnumerator SetCanMoveToTrue()
     {
-        yield return new WaitForSeconds(desiredWalkTime + 0.6f);
+        yield return new WaitForSeconds(desiredWalkTime + 0.5f);
         elapsidedTime = 0;
         canMove = true;
+        nextMove = false;
     }
 
     private void OnDrawGizmos()
