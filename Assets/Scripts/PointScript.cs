@@ -32,7 +32,7 @@ public class PointScript : MonoBehaviour
             {
                 gameManager.NextTurn();
                 diceThrower.isTurn = false;
-                Debug.Log("No points");//Show that you have no points left
+                Debug.Log("No points");//Show that you have no points lefts
             }
         }
     }

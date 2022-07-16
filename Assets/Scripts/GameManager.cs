@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<GameObject> characterSpawnpoints;
 
     public int MaxPoints { get { return maxPoints; } set { maxPoints = value; } }
+    public GameObject PlayerObject { get { return characters[0]; } }
 
     private Camera cam;
     private int amountOfCharacters;
@@ -28,12 +29,12 @@ public class GameManager : MonoBehaviour
             Instance = this;
 
         cam = Camera.main;
+        amountOfCharacters = characterPrefabs.Count;
+        SpawnCharacters();
     }
 
     private void Start()
     {
-        amountOfCharacters = characterPrefabs.Count;
-        SpawnCharacters();
     }
 
     public void AddPoints(int amount)
