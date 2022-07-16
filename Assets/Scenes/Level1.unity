@@ -18738,6 +18738,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7f9e1c9e33158544b242e19dfcf8274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1213086172 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6903463533773330922, guid: b6490a9972bd4b144830f2b838b8e82a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1895438186}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1219237834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24380,10 +24386,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1550219216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ea487d0b71d84f42a6a75207c053577, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b19e12ef582c634d9cc73d93a40d615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followGameObject: {fileID: 1213086167}
+  target: {fileID: 1213086172}
+  smoothSpeed: 36.81
+  offSet: {x: -2.06, y: 4.98, z: -3.63}
 --- !u!1001 &1552352130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30763,6 +30771,7 @@ MonoBehaviour:
   dicePrefab: {fileID: 5025266602348806400, guid: dd8aafb3dce5ee64bb002f94ee55433a,
     type: 3}
   characterPrefabs: []
+  characterSpawnpoints: []
 --- !u!4 &1964756186
 Transform:
   m_ObjectHideFlags: 0
