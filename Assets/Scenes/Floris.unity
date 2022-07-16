@@ -9899,7 +9899,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   m_LocalRotation: {x: 0.29333687, y: -0, z: -0, w: 0.9560092}
-  m_LocalPosition: {x: 0.893, y: 4.986, z: 2.823}
+  m_LocalPosition: {x: 2.09, y: 4.986, z: -1.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13556,6 +13556,7 @@ MonoBehaviour:
   dicePrefab: {fileID: 5025266602348806400, guid: dd8aafb3dce5ee64bb002f94ee55433a,
     type: 3}
   characterPrefabs: []
+  characterSpawnpoints: []
 --- !u!4 &1383215658
 Transform:
   m_ObjectHideFlags: 0
