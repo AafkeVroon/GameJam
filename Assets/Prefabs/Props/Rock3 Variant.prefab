@@ -15,22 +15,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 86725e3a576f0f044a42708567ef9e67,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.325308
+      value: 17.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 86725e3a576f0f044a42708567ef9e67,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00065876066
+      value: 0.49999905
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 86725e3a576f0f044a42708567ef9e67,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.885951
+      value: 57.22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 86725e3a576f0f044a42708567ef9e67,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 86725e3a576f0f044a42708567ef9e67,
         type: 3}
@@ -40,12 +40,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 86725e3a576f0f044a42708567ef9e67,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 86725e3a576f0f044a42708567ef9e67,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 86725e3a576f0f044a42708567ef9e67,
         type: 3}
@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 86725e3a576f0f044a42708567ef9e67,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 86725e3a576f0f044a42708567ef9e67,
         type: 3}
@@ -91,5 +91,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.289408, y: 0.79114664, z: 1.3555696}
-  m_Center: {x: -0.031962544, y: 0.39491433, z: 0.059538275}
+  m_Size: {x: 1.64, y: 1.09, z: 2.21}
+  m_Center: {x: -0.18, y: 0.34, z: 0.1}
