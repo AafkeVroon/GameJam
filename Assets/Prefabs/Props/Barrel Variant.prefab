@@ -70,7 +70,26 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 169eff51c55142948bf53577a69b8616,
         type: 3}
       propertyPath: m_Name
-      value: Barrel
+      value: Barrel Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169eff51c55142948bf53577a69b8616, type: 3}
+--- !u!1 &8295120991003142816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 169eff51c55142948bf53577a69b8616,
+    type: 3}
+  m_PrefabInstance: {fileID: 9214181521444689905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &-8876949601415839378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8295120991003142816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8151274, y: 1.9999999, z: 1.8151996}
+  m_Center: {x: 0, y: 1.0003923, z: 0.00000008940697}
