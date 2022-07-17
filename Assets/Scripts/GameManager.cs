@@ -69,6 +69,8 @@ public class GameManager : MonoBehaviour
         else
         {
             currentTurn = 0;
+            characters[currentTurn].GetComponent<DiceThrower>().isTurn = true;
+            characters[currentTurn].GetComponent<DiceThrower>().canThrow = true;
         }
     }
 
