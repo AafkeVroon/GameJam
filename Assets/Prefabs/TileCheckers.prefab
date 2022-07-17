@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7412906720265887002}
   m_Layer: 0
   m_Name: TileCheckerRight
-  m_TagString: Untagged
+  m_TagString: Checker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 7412906720465305103}
   m_Layer: 0
   m_Name: TileCheckerLeft
-  m_TagString: Untagged
+  m_TagString: Checker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 7412906721279032679}
   m_Layer: 0
   m_Name: TileCheckerForward
-  m_TagString: Untagged
+  m_TagString: Checker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 7412906721332489885}
   m_Layer: 0
   m_Name: TileCheckerBack
-  m_TagString: Untagged
+  m_TagString: Checker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

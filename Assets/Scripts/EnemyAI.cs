@@ -56,7 +56,6 @@ public class EnemyAI : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer <= 0)
             {
-                //Debug.Log("qQQQQqqqqQQQQQQQqqqqqqqQQQQQQQQ1");
                 nextMove = true;
                 timer = 0.5f;
                 CheckAction();
@@ -87,7 +86,6 @@ public class EnemyAI : MonoBehaviour
         //anim.SetTrigger("Hop");
         //pointScript.UsePoint(1);
         StartCoroutine(SetCanMoveToTrue());
-        //Debug.Log("JFHFBFJFFJFJFJFJFJFJFJFJFJ");
     }
 
     private void CheckAction()
@@ -97,6 +95,7 @@ public class EnemyAI : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("Player"))
             {
                 float rnd = Random.Range(0, 101);
+                Debug.Log(rnd + "RNDNRNDRNDRNDRNDRNDRND");
                 if (rnd < 20)
                 {
                     Move();

@@ -26,12 +26,18 @@ public class TileChecker : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Tile") || other.gameObject.CompareTag("Gate") || other.gameObject.CompareTag("Enemy"))
+        //Debug.Log(other.gameObject.name + "A" + other.gameObject.transform.position);
+        if (playerAttack && other.gameObject.CompareTag("Enemy") && !playerAttack.EnemyFound)
+        {
+            playerAttack.EnemyFound = true;
+        }
+
+        if (other.gameObject.CompareTag("Tile") || other.gameObject.CompareTag("Gate")
+            || other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Checker"))
         {
             switch (direction)
             {
                 case 0:
-
                     if (playerMovement)
                         playerMovement.goForward = true;
                     else
@@ -91,6 +97,12 @@ public class TileChecker : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            if (playerAttack)
+                playerAttack.enemyFound = false;
+        }
+
         if (other.gameObject.CompareTag("Tile"))
         {
             switch (direction)

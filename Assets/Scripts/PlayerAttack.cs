@@ -39,7 +39,7 @@ public class PlayerAttack : MonoBehaviour
             if (Physics.SphereCast(transform.position, attackRange, transform.forward, out hit, 10, hitLayer))
             {
                 anim.SetTrigger("Attack");
-                hit.collider.gameObject.GetComponent<Health>().ModifyHealth(attackDamage);
+                hit.collider.gameObject.GetComponent<Health>().ModifyHealth(-attackDamage);
                 StartCoroutine(AttackCooldown());
             }
         }
