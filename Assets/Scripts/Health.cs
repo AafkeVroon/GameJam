@@ -28,6 +28,7 @@ public class Health : MonoBehaviour
         if (HP <= 0)
         {
             onHealthZero.Invoke();
+            GameManager.Instance.RemoveEnemy(gameObject);
             Destroy(gameObject);
         }
     }
