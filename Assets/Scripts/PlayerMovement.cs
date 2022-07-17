@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float desiredWalkTime = 2;
     [SerializeField] private GameObject tileCheckerPrefab;
+    [SerializeField] private AudioClip walkSound;
 
     public bool goForward;
     public bool goBack;
@@ -20,11 +21,13 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 nextPosition;
     private Vector3 currentPosition;
     private float elapsidedTime;
+    private AudioSource audioSource;
 
     private void Start()
     {
         pointScript = GetComponent<PointScript>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         GameObject checker = Instantiate(tileCheckerPrefab);
         checker.GetComponent<FollowObject>().followGameObject = gameObject;
         canMove = true;
@@ -99,6 +102,7 @@ public class PlayerMovement : MonoBehaviour
     {
         canMove = false;
         anim.SetTrigger("Hop");
+        audioSource.PlayOneShot(walkSound);
         StartCoroutine(SetCanMoveToTrue());
     }
 

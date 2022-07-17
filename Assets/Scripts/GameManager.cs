@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
     public void RemoveEnemy(GameObject self)
     {
         characters.Remove(self);
-        if (characters.Count <= 0)
+        if (characters.Count <= 1)
             InterfaceManager.Instance.ShowWinMenu();
     }
 

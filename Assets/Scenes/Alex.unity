@@ -3125,6 +3125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   desiredWalkTime: 2
   tileCheckerPrefab: {fileID: 0}
+  walkSound: {fileID: 0}
   goForward: 0
   goBack: 0
   goLeft: 0
@@ -13923,6 +13924,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 530658014, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1208004143, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
       propertyPath: m_Name
       value: LivesAmountText (TMP) (1)
@@ -16387,8 +16392,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6902405320846579255, guid: 16a27bc32b28c9c4a8cb4eaeeb85af43,
         type: 3}
+      propertyPath: amountOfDices
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902405320846579255, guid: 16a27bc32b28c9c4a8cb4eaeeb85af43,
+        type: 3}
       propertyPath: diceSpawnpoint
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902405320846579255, guid: 16a27bc32b28c9c4a8cb4eaeeb85af43,
+        type: 3}
+      propertyPath: characterPrefabs.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6902405320846579255, guid: 16a27bc32b28c9c4a8cb4eaeeb85af43,
         type: 3}

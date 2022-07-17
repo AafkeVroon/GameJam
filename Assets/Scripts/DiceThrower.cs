@@ -62,4 +62,10 @@ public class DiceThrower : MonoBehaviour
             }
         }
     }
+
+    public void AddRoll(int amount)
+    {
+        CurrentAmountOfThrows += 1;
+        amountOfThrowsText.text = CurrentAmountOfThrows.ToString();
+    }
 }

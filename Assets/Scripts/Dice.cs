@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Dice : MonoBehaviour
 {
+    [SerializeField] private AudioClip[] bounchSounds;
+
     public int value;
     public bool hasNumber;
 
     private Rigidbody rb;
     private GameManager gameManager;
     private bool check;
+    private AudioSource audioSource;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
         gameManager = GameManager.Instance;
         StartCoroutine(StartCheck());
         StartCoroutine(HideDice());
@@ -54,5 +58,10 @@ public class Dice : MonoBehaviour
         
         gameObject.SetActive(false);
         Destroy(gameObject, 3);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        audioSource.PlayOneShot(bounchSounds[Random.Range(0, bounchSounds.Length)]);
     }
 }

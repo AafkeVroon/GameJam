@@ -96,7 +96,7 @@ public class EnemyAI : MonoBehaviour
             {
                 float rnd = Random.Range(0, 101);
                 Debug.Log(rnd + "RNDNRNDRNDRNDRNDRNDRND");
-                if (rnd < 0)//20
+                if (rnd < 20)//20
                 {
                     Move();
                 }

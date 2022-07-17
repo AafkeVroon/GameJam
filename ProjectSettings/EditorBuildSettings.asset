@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Sebastiaan/MenuScene.unity
     guid: fcef95eae49c4a94cb584e26dc26ff9e
   - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: f33fa5b4c97e2064e82c8bc302bed540
+  - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 755de324decb0584b97b9b8826462433
   - enabled: 1
@@ -18,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: dd27afabad5514f42810745222235534
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 1075dc811d2e1e643a17491225b12a9f
+    path: Assets/Scenes/GameOver.unity
+    guid: 6b6221a708bdbb449b2bfb7df5dd2077
   m_configObjects: {}

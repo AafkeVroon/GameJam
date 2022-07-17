@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DapperDuckyStudio
-  productName: Gamejam
+  productName: DiceOfTheMice
   defaultCursor: {fileID: 2800000, guid: d3c70c4270012ad489671ccaa1f0d689, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
