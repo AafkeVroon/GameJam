@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : Health
 {
@@ -26,7 +27,6 @@ public class PlayerHealth : Health
     /// </summary>
     public void Dead()
     {
-        InterfaceManager.Instance.ShowWinMenu();
-        //GameManager.instance.SetGameOver();
+        SceneManager.LoadScene("GameOver");
     }
 }

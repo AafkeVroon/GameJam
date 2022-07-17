@@ -6,7 +6,8 @@ using TMPro;
 public class PointScript : MonoBehaviour
 {
     [SerializeField] private int currentAmountPoints;
-    [SerializeField] private TextMeshProUGUI pointsText;
+    [SerializeField] private TextMeshProUGUI pointsText1;
+    [SerializeField] private TextMeshProUGUI pointsText2;
 
     public int CurrentAmountPoints { get { return currentAmountPoints; } set { currentAmountPoints = value; } }
     public DiceThrower DiceThrower { get { return diceThrower; } }
@@ -18,6 +19,13 @@ public class PointScript : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         diceThrower = GetComponent<DiceThrower>();
+        if (gameObject.CompareTag("Player"))
+        {
+            pointsText1 = InterfaceManager.Instance.pointAmountText1;
+            pointsText2 = InterfaceManager.Instance.pointAmountText2;
+            pointsText1.text = currentAmountPoints.ToString();
+            pointsText2.text = currentAmountPoints.ToString();
+        }
     }
 
     public void UsePoint(int amount)
@@ -26,7 +34,7 @@ public class PointScript : MonoBehaviour
         {
             CurrentAmountPoints -= amount;
 
-            if(CurrentAmountPoints <= 0)
+            if (CurrentAmountPoints <= 0)
             {
                 CurrentAmountPoints = 0;
                 gameManager.NextTurn();
@@ -34,8 +42,21 @@ public class PointScript : MonoBehaviour
                 Debug.Log("No points");//Show that you have no points lefts
             }
 
-            if (pointsText)
-                pointsText.text = CurrentAmountPoints.ToString();
+            if (pointsText1)
+            {
+                pointsText1.text = currentAmountPoints.ToString();
+                pointsText2.text = CurrentAmountPoints.ToString();
+            }
+        }
+    }
+
+    public void AddPoints(int amount)
+    {
+        CurrentAmountPoints += amount;
+        if (pointsText1)
+        {
+            pointsText1.text = currentAmountPoints.ToString();
+            pointsText2.text = CurrentAmountPoints.ToString();
         }
     }
 
@@ -50,5 +71,10 @@ public class PointScript : MonoBehaviour
     public void GetPoints()
     {
         CurrentAmountPoints = gameManager.MaxPoints;
+        if (pointsText1)
+        {
+            pointsText1.text = CurrentAmountPoints.ToString("00");
+            pointsText2.text = CurrentAmountPoints.ToString("00");
+        }
     }
 }

@@ -15,8 +15,8 @@ public class Dice : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         gameManager = GameManager.Instance;
-        Destroy(gameObject, 6);
         StartCoroutine(StartCheck());
+        StartCoroutine(HideDice());
     }
 
     private void Update()

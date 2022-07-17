@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class InterfaceManager : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class InterfaceManager : MonoBehaviour
 
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject winMenu;
+
+    public TextMeshProUGUI rollAmountText;
+    public TextMeshProUGUI pointAmountText1;
+    public TextMeshProUGUI pointAmountText2;
 
     private bool isPaused;
     private int currentScene;

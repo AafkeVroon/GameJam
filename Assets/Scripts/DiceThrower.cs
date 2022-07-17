@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DiceThrower : MonoBehaviour
 {
     [SerializeField] private Transform diceSpawnpoint;
+    [SerializeField] private TextMeshProUGUI amountOfThrowsText;
 
     public bool isTurn;
     public bool canThrow;
@@ -18,9 +21,14 @@ public class DiceThrower : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         CurrentAmountOfThrows = gameManager.AmountOfDices;
+
         canThrow = true;
         if (gameObject.CompareTag("Player"))
+        {
             isTurn = true;
+            amountOfThrowsText = InterfaceManager.Instance.rollAmountText;
+            amountOfThrowsText.text = CurrentAmountOfThrows.ToString();
+        }
     }
 
     private void Update()
@@ -36,11 +44,12 @@ public class DiceThrower : MonoBehaviour
                 {
                     gameManager.ThrowDice(diceSpawnpoint);
                     CurrentAmountOfThrows--;
+                    amountOfThrowsText.text = CurrentAmountOfThrows.ToString();
                     canThrow = false;
                 }
-                else
+                else if (CurrentAmountOfThrows <= 0)
                 {
-                    //Lose
+                    SceneManager.LoadScene("GameOver");
                 }
             }
             else

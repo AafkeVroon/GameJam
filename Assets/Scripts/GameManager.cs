@@ -35,8 +35,7 @@ public class GameManager : MonoBehaviour
     public void AddPoints(int amount)
     {
         MaxPoints = amount;
-        characters[currentTurn].GetComponent<PointScript>().CurrentAmountPoints += MaxPoints;
-        Debug.Log(MaxPoints);
+        characters[currentTurn].GetComponent<PointScript>().AddPoints(amount);
     }
 
     public void ThrowDice(Transform diceSpawnpoint)
@@ -76,8 +75,8 @@ public class GameManager : MonoBehaviour
     public void RemoveEnemy(GameObject self)
     {
         characters.Remove(self);
-        //if(characters.Count <= 0)
-        //    //Win
+        if (characters.Count <= 0)
+            InterfaceManager.Instance.ShowWinMenu();
     }
 
     public void EndTurn()
