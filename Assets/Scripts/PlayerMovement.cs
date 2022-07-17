@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.S) && canMove && goBack)
             {
-                if (pointScript.CheckEnoughPoints(1))
+                if (!pointScript.CheckEnoughPoints(1))
                     return;
                 nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z - 2);
                 currentPosition = transform.position;
@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.D) && canMove && goRight)
             {
-                if (pointScript.CheckEnoughPoints(1))
+                if (!pointScript.CheckEnoughPoints(1))
                     return;
                 nextPosition = new Vector3(currentPosition.x + 2, currentPosition.y, currentPosition.z);
                 currentPosition = transform.position;
@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.A) && canMove && goLeft)
             {
-                if (pointScript.CheckEnoughPoints(1))
+                if (!pointScript.CheckEnoughPoints(1))
                     return;
                 nextPosition = new Vector3(currentPosition.x - 2, currentPosition.y, currentPosition.z);
                 currentPosition = transform.position;
@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator SetCanMoveToTrue()
     {
-        yield return new WaitForSeconds(desiredWalkTime + 0.7f);
+        yield return new WaitForSeconds(desiredWalkTime + 0.5f);
         pointScript.UsePoint(1);
         elapsidedTime = 0;
         canMove = true;

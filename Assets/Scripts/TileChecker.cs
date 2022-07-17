@@ -7,6 +7,7 @@ public class TileChecker : MonoBehaviour
     [SerializeField] private int direction;
 
     private PlayerMovement playerMovement;
+    private PlayerAttack playerAttack;
     private EnemyAI enemyAI;
 
     private void Start()
@@ -15,6 +16,7 @@ public class TileChecker : MonoBehaviour
         if (followObject.CompareTag("Player"))
         {
             playerMovement = followObject.GetComponent<PlayerMovement>();
+            playerAttack = followObject.GetComponent<PlayerAttack>();
         }
         else
         {
@@ -29,6 +31,7 @@ public class TileChecker : MonoBehaviour
             switch (direction)
             {
                 case 0:
+
                     if (playerMovement)
                         playerMovement.goForward = true;
                     else

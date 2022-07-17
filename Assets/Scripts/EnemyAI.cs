@@ -123,6 +123,8 @@ public class EnemyAI : MonoBehaviour
             case 0:
                 if (canMove && goForward)
                 {
+                    if (!pointScript.CheckEnoughPoints(1))
+                        return;
                     nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z + 2);
                     currentPosition = transform.position;
                     transform.rotation = Quaternion.LookRotation(Vector3.forward);
@@ -134,6 +136,8 @@ public class EnemyAI : MonoBehaviour
             case 1:
                 if (canMove && goBack)
                 {
+                    if (!pointScript.CheckEnoughPoints(1))
+                        return;
                     nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z - 2);
                     currentPosition = transform.position;
                     transform.rotation = Quaternion.LookRotation(Vector3.back);
@@ -145,6 +149,8 @@ public class EnemyAI : MonoBehaviour
             case 2:
                 if (canMove && goRight)
                 {
+                    if (!pointScript.CheckEnoughPoints(1))
+                        return;
                     nextPosition = new Vector3(currentPosition.x + 2, currentPosition.y, currentPosition.z);
                     currentPosition = transform.position;
                     transform.rotation = Quaternion.LookRotation(Vector3.right);
@@ -156,6 +162,8 @@ public class EnemyAI : MonoBehaviour
             case 3:
                 if (canMove && goLeft)
                 {
+                    if (!pointScript.CheckEnoughPoints(1))
+                        return;
                     nextPosition = new Vector3(currentPosition.x - 2, currentPosition.y, currentPosition.z);
                     currentPosition = transform.position;
                     transform.rotation = Quaternion.LookRotation(Vector3.left);
@@ -170,11 +178,11 @@ public class EnemyAI : MonoBehaviour
     private IEnumerator SetCanMoveToTrue()
     {
         yield return new WaitForSeconds(desiredWalkTime + 0.5f);
-        Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS");
         pointScript.UsePoint(1);
         elapsidedTime = 0;
         canMove = true;
         nextMove = false;
+        Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS");
     }
 
     private void OnDrawGizmos()
