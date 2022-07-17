@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<GameObject> characterSpawnpoints;
 
     public int MaxPoints { get { return maxPoints; } set { maxPoints = value; } }
+    public int AmountOfDices { get { return amountOfDices; } }
     public GameObject PlayerObject { get { return characters[0]; } }
 
     private int amountOfCharacters;

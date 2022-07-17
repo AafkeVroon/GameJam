@@ -9,11 +9,15 @@ public class DiceThrower : MonoBehaviour
     public bool isTurn;
     public bool canThrow;
 
+    public int CurrentAmountOfThrows { get { return currentAmountOfThrows; } set { currentAmountOfThrows = value; } }
+
     private GameManager gameManager;
+    private int currentAmountOfThrows;
 
     private void Start()
     {
         gameManager = GameManager.Instance;
+        CurrentAmountOfThrows = gameManager.AmountOfDices;
         canThrow = true;
         if (gameObject.CompareTag("Player"))
             isTurn = true;
@@ -28,10 +32,15 @@ public class DiceThrower : MonoBehaviour
         {
             if (gameObject.CompareTag("Player"))
             {
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) && CurrentAmountOfThrows > 0)
                 {
                     gameManager.ThrowDice(diceSpawnpoint);
+                    CurrentAmountOfThrows--;
                     canThrow = false;
+                }
+                else
+                {
+                    //Lose
                 }
             }
             else
