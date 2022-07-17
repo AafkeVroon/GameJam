@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2094930933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2094930934}
+  m_Layer: 0
+  m_Name: DiceSpawnpoint
+  m_TagString: DiceSpawn
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2094930934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094930933}
+  m_LocalRotation: {x: -0.2699042, y: 0.16893375, z: 0.048161596, w: 0.94672793}
+  m_LocalPosition: {x: 0, y: 12.62, z: 0}
+  m_LocalScale: {x: 4.545454, y: 4.5454535, z: 4.545455}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6903463533773330922}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -31.825, y: 14.762, z: 0}
 --- !u!1 &6903463533773330923
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,6 +65,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6360418578140061287}
+  - {fileID: 2094930934}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -5.473, z: 0}
@@ -102,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6303daff8e9773a49be9ab7531f060e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diceSpawnpoint: {fileID: 2094930934}
   isTurn: 0
   canThrow: 0
 --- !u!114 &1806719788
