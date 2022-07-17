@@ -93,7 +93,7 @@ public class EnemyAI : MonoBehaviour
             {
                 float rnd = Random.Range(0, 101);
                 Debug.Log(rnd + "RNDNRNDRNDRNDRNDRNDRND");
-                if (rnd < 0)//20
+                if (rnd < 101)//20
                 {
                     Move();
                 }
@@ -124,8 +124,8 @@ public class EnemyAI : MonoBehaviour
             anim.SetTrigger("Attack");
             hit.collider.gameObject.GetComponent<Health>().ModifyHealth(-attackDamage);
             StartCoroutine(AttackCooldown());
-            Debug.Log("ICANATTACKHELPMEEEEE" + hit.collider.gameObject.name);
         }
+            Debug.Log("ICANATTACKHELPMEEEEE" );
     }
 
     private void Move()

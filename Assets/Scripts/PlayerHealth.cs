@@ -7,8 +7,10 @@ public class PlayerHealth : Health
 {
     public override void Start()
     {
+        healthUI = InterfaceManager.Instance.healthText;
+
         if (healthUI)
-            healthUI.text = "Lives: " + health.ToString();
+            healthUI.text = health.ToString();
     }
 
     public override void ModifyHealth(int hp)
@@ -16,7 +18,7 @@ public class PlayerHealth : Health
         HP += hp;
 
         if (healthUI)
-            healthUI.text = "Lives: " + health.ToString();
+            healthUI.text = health.ToString();
 
         if (HP <= 0)
             onHealthZero.Invoke();

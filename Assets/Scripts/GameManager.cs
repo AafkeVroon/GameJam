@@ -63,12 +63,16 @@ public class GameManager : MonoBehaviour
         if (currentTurn < characters.Count - 1)
         {
             currentTurn++;
+            InterfaceManager.Instance.spritePlayer.SetActive(false);
+            InterfaceManager.Instance.spriteSlime.SetActive(true);
             characters[currentTurn].GetComponent<DiceThrower>().isTurn = true;
             characters[currentTurn].GetComponent<DiceThrower>().canThrow = true;
         }
         else
         {
             currentTurn = 0;
+            InterfaceManager.Instance.spritePlayer.SetActive(true);
+            InterfaceManager.Instance.spriteSlime.SetActive(false);
             characters[currentTurn].GetComponent<DiceThrower>().isTurn = true;
             characters[currentTurn].GetComponent<DiceThrower>().canThrow = true;
         }

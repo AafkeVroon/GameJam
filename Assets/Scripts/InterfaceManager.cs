@@ -14,6 +14,9 @@ public class InterfaceManager : MonoBehaviour
     public TextMeshProUGUI rollAmountText;
     public TextMeshProUGUI pointAmountText1;
     public TextMeshProUGUI pointAmountText2;
+    public TextMeshProUGUI healthText;
+    public GameObject spritePlayer;
+    public GameObject spriteSlime;
     public bool isPaused;
 
     private int currentScene;
