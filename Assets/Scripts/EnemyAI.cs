@@ -25,6 +25,10 @@ public class EnemyAI : MonoBehaviour
     public bool goLeft;
     public bool goRight;
 
+    public bool EnemyFound { get { return enemyFound; } set { enemyFound = value; } }
+
+    public bool enemyFound;
+
     private PointScript pointScript;
     private bool canMove;
     private bool nextMove;

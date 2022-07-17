@@ -100,7 +100,7 @@ public class TileChecker : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             if (playerAttack)
-                playerAttack.enemyFound = false;
+                playerAttack.EnemyFound = false;
         }
 
         if (other.gameObject.CompareTag("Tile"))

@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviour
 
     public bool EnemyFound { get { return enemyFound; } set { enemyFound = value; } }
 
-    public bool enemyFound;
+    private bool enemyFound;
     private PointScript pointScript;
     private PlayerMovement playerMovement;
     private Animator anim;
