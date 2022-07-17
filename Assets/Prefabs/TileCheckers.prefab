@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 3
-  playerMovement: {fileID: 0}
 --- !u!65 &7412906720265887076
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59,7 +58,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.8, y: 9.760026, z: 4.8}
+  m_Size: {x: 4, y: 9.760026, z: 4}
   m_Center: {x: 0, y: 1.3800137, z: 0}
 --- !u!54 &7412906720265887002
 Rigidbody:
@@ -124,7 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 2
-  playerMovement: {fileID: 0}
 --- !u!65 &7412906720465305097
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -136,7 +134,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.8, y: 9.760026, z: 4.8}
+  m_Size: {x: 4, y: 9.760026, z: 4}
   m_Center: {x: 0, y: 1.3800137, z: 0}
 --- !u!54 &7412906720465305103
 Rigidbody:
@@ -201,7 +199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
-  playerMovement: {fileID: 0}
 --- !u!65 &7412906721279032673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -213,7 +210,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.8, y: 9.760026, z: 4.8}
+  m_Size: {x: 4, y: 9.760026, z: 4}
   m_Center: {x: 0, y: 1.3800137, z: 0}
 --- !u!54 &7412906721279032679
 Rigidbody:
@@ -278,7 +275,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 1
-  playerMovement: {fileID: 0}
 --- !u!65 &7412906721332489887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -290,7 +286,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.8, y: 9.760026, z: 4.8}
+  m_Size: {x: 4, y: 9.760026, z: 4}
   m_Center: {x: 0, y: 1.3800137, z: 0}
 --- !u!54 &7412906721332489885
 Rigidbody:

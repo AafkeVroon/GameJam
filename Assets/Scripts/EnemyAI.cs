@@ -174,13 +174,6 @@ public class EnemyAI : MonoBehaviour
         elapsidedTime = 0;
         canMove = true;
         nextMove = false;
-        yield return new WaitForSeconds(0.5f);
-        if (pointScript.CurrentAmountPoints > 0)
-        {
-            canMove = true;
-            nextMove = false;
-        }
-        //Debug.Log("WHYDONTYOUWORRHRBDFHDFHF");
     }
 
     private void OnDrawGizmos()

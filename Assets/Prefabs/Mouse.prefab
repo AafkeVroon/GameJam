@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 1101915168}
   - component: {fileID: 1806719787}
   - component: {fileID: 1806719788}
+  - component: {fileID: 1806719784}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Player
@@ -154,6 +155,23 @@ MonoBehaviour:
   onHealthZero:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1806719784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903463533773330923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6670e0514e9654f8c974b1cf7cc892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1
+  attackDamage: 2
+  attackTime: 1
+  attackPointCost: 2
+  enemyFound: 0
 --- !u!1001 &323348258887025459
 PrefabInstance:
   m_ObjectHideFlags: 0
