@@ -47,4 +47,11 @@ public class Dice : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         check = true;
     }
+
+    private IEnumerator HideDice()
+    {
+        yield return new WaitForSeconds(6);
+        gameObject.SetActive(false);
+        Destroy(gameObject, 3);
+    }
 }
