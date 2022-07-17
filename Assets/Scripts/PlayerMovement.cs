@@ -38,45 +38,48 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        if (pointScript.CurrentAmountPoints > 0)
+        if (!InterfaceManager.Instance.isPaused)
         {
-            if (Input.GetKeyDown(KeyCode.W) && canMove && goForward)
+            if (pointScript.CurrentAmountPoints > 0)
             {
-                if (!pointScript.CheckEnoughPoints(1))
-                    return;
+                if (Input.GetKeyDown(KeyCode.W) && canMove && goForward)
+                {
+                    if (!pointScript.CheckEnoughPoints(1))
+                        return;
 
-                nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z + 2);
-                currentPosition = transform.position;
-                transform.rotation = Quaternion.LookRotation(Vector3.forward);
-                UseAction();
+                    nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z + 2);
+                    currentPosition = transform.position;
+                    transform.rotation = Quaternion.LookRotation(Vector3.forward);
+                    UseAction();
+                }
+                if (Input.GetKeyDown(KeyCode.S) && canMove && goBack)
+                {
+                    if (!pointScript.CheckEnoughPoints(1))
+                        return;
+                    nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z - 2);
+                    currentPosition = transform.position;
+                    transform.rotation = Quaternion.LookRotation(Vector3.back);
+                    UseAction();
+                }
+                if (Input.GetKeyDown(KeyCode.D) && canMove && goRight)
+                {
+                    if (!pointScript.CheckEnoughPoints(1))
+                        return;
+                    nextPosition = new Vector3(currentPosition.x + 2, currentPosition.y, currentPosition.z);
+                    currentPosition = transform.position;
+                    transform.rotation = Quaternion.LookRotation(Vector3.right);
+                    UseAction();
+                }
+                if (Input.GetKeyDown(KeyCode.A) && canMove && goLeft)
+                {
+                    if (!pointScript.CheckEnoughPoints(1))
+                        return;
+                    nextPosition = new Vector3(currentPosition.x - 2, currentPosition.y, currentPosition.z);
+                    currentPosition = transform.position;
+                    transform.rotation = Quaternion.LookRotation(Vector3.left);
+                    UseAction();
+                }
             }
-            if (Input.GetKeyDown(KeyCode.S) && canMove && goBack)
-            {
-                if (!pointScript.CheckEnoughPoints(1))
-                    return;
-                nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z - 2);
-                currentPosition = transform.position;
-                transform.rotation = Quaternion.LookRotation(Vector3.back);
-                UseAction();
-            }
-            if (Input.GetKeyDown(KeyCode.D) && canMove && goRight)
-            {
-                if (!pointScript.CheckEnoughPoints(1))
-                    return;
-                nextPosition = new Vector3(currentPosition.x + 2, currentPosition.y, currentPosition.z);
-                currentPosition = transform.position;
-                transform.rotation = Quaternion.LookRotation(Vector3.right);
-                UseAction();
-            }
-            if (Input.GetKeyDown(KeyCode.A) && canMove && goLeft)
-            {
-                if (!pointScript.CheckEnoughPoints(1))
-                    return;
-                nextPosition = new Vector3(currentPosition.x - 2, currentPosition.y, currentPosition.z);
-                currentPosition = transform.position;
-                transform.rotation = Quaternion.LookRotation(Vector3.left);
-                UseAction();
-            }    
         }
 
         if (!canMove)

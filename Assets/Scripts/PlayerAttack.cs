@@ -27,7 +27,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        if (!pointScript.DiceThrower.isTurn || !EnemyFound | !playerMovement.CanMove)
+        if (InterfaceManager.Instance.isPaused || !pointScript.DiceThrower.isTurn || !EnemyFound | !playerMovement.CanMove)
             return;
 
         if (Input.GetMouseButtonDown(1))

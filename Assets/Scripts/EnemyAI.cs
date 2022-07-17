@@ -52,7 +52,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        if (!pointScript.DiceThrower.isTurn)
+        if (!pointScript.DiceThrower.isTurn || InterfaceManager.Instance.isPaused)
             return;
 
         if (!nextMove && pointScript.CurrentAmountPoints > 0)

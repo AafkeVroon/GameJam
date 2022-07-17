@@ -36,26 +36,29 @@ public class DiceThrower : MonoBehaviour
         if (!isTurn)
             return;
 
-        if (canThrow)
+        if (!InterfaceManager.Instance.isPaused)
         {
-            if (gameObject.CompareTag("Player"))
+            if (canThrow)
             {
-                if (Input.GetMouseButtonDown(0) && CurrentAmountOfThrows > 0)
+                if (gameObject.CompareTag("Player"))
+                {
+                    if (Input.GetMouseButtonDown(0) && CurrentAmountOfThrows > 0)
+                    {
+                        gameManager.ThrowDice(diceSpawnpoint);
+                        CurrentAmountOfThrows--;
+                        amountOfThrowsText.text = CurrentAmountOfThrows.ToString();
+                        canThrow = false;
+                    }
+                    else if (CurrentAmountOfThrows <= 0)
+                    {
+                        SceneManager.LoadScene("GameOver");
+                    }
+                }
+                else
                 {
                     gameManager.ThrowDice(diceSpawnpoint);
-                    CurrentAmountOfThrows--;
-                    amountOfThrowsText.text = CurrentAmountOfThrows.ToString();
                     canThrow = false;
                 }
-                else if (CurrentAmountOfThrows <= 0)
-                {
-                    SceneManager.LoadScene("GameOver");
-                }
-            }
-            else
-            {
-                gameManager.ThrowDice(diceSpawnpoint);
-                canThrow = false;
             }
         }
     }

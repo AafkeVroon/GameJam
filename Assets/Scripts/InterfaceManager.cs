@@ -14,8 +14,8 @@ public class InterfaceManager : MonoBehaviour
     public TextMeshProUGUI rollAmountText;
     public TextMeshProUGUI pointAmountText1;
     public TextMeshProUGUI pointAmountText2;
+    public bool isPaused;
 
-    private bool isPaused;
     private int currentScene;
 
     private void Awake()
@@ -38,12 +38,24 @@ public class InterfaceManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (isPaused)
+                if (isPaused == true)
+                {
                     pauseMenu.SetActive(false);
-                else
+                    isPaused = false;
+                }
+                else if (isPaused == false)
+                {
                     pauseMenu.SetActive(true);
+                    isPaused = true;
+                }
             }
         }
+    }
+
+    public void Resume()
+    {
+        pauseMenu.SetActive(false);
+        isPaused = false;
     }
 
     public void LoadNewScene(string newLevel)
