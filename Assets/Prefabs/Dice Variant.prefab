@@ -60,12 +60,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 2
-  up: 0
-  down: 0
-  left: 0
-  right: 0
-  back: 0
-  front: 0
 --- !u!54 &470274268
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -142,12 +136,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 3
-  up: 0
-  down: 0
-  left: 0
-  right: 0
-  back: 0
-  front: 0
 --- !u!54 &661609075
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -224,12 +212,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 5
-  up: 0
-  down: 0
-  left: 0
-  right: 0
-  back: 0
-  front: 0
 --- !u!54 &1548985916
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -306,12 +288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 1
-  up: 0
-  down: 0
-  left: 0
-  right: 0
-  back: 0
-  front: 0
 --- !u!54 &1824400002
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -388,12 +364,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 4
-  up: 0
-  down: 0
-  left: 0
-  right: 0
-  back: 0
-  front: 0
 --- !u!54 &1892918386
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -470,12 +440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
-  up: 0
-  down: 0
-  left: 0
-  right: 0
-  back: 0
-  front: 0
 --- !u!54 &1905920703
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -507,32 +471,32 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 018cc7a9e6e637340acf14ee14e04e2a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 018cc7a9e6e637340acf14ee14e04e2a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 018cc7a9e6e637340acf14ee14e04e2a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 018cc7a9e6e637340acf14ee14e04e2a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.93
+      value: 405.46802
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 018cc7a9e6e637340acf14ee14e04e2a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.8400002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 018cc7a9e6e637340acf14ee14e04e2a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.22
+      value: 195.07413
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 018cc7a9e6e637340acf14ee14e04e2a,
         type: 3}
@@ -628,8 +592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abf08f102965b64abe295727b0129da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directions: []
-  diceRotation: 
+  value: 0
+  hasNumber: 0
 --- !u!4 &5689882466879462330 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 018cc7a9e6e637340acf14ee14e04e2a,
