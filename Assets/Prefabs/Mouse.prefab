@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 1806719787}
   - component: {fileID: 1806719788}
   - component: {fileID: 1806719784}
+  - component: {fileID: 1806719789}
   m_Layer: 6
   m_Name: Mouse
   m_TagString: Player
@@ -122,7 +123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAmountPoints: 0
-  pointsText: {fileID: 0}
+  pointsText1: {fileID: 0}
+  pointsText2: {fileID: 0}
 --- !u!114 &1806719787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diceSpawnpoint: {fileID: 2094930934}
+  amountOfThrowsText: {fileID: 0}
   isTurn: 0
   canThrow: 0
 --- !u!114 &1806719788
@@ -189,6 +192,19 @@ MonoBehaviour:
   hitLayer:
     serializedVersion: 2
     m_Bits: 128
+--- !u!65 &1806719789
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903463533773330923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5009258, y: 7.955468, z: 3.0203283}
+  m_Center: {x: 0.13373204, y: 2.56051, z: 0.06377188}
 --- !u!1001 &323348258887025459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -285,6 +301,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MouseWarrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301571433220196334, guid: 98a384f5147a836439ae6fa98ebc32ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301571433220196334, guid: 98a384f5147a836439ae6fa98ebc32ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6645199205766176084, guid: 98a384f5147a836439ae6fa98ebc32ac,
         type: 3}
@@ -395,6 +421,7 @@ PrefabInstance:
     - {fileID: 186432037, guid: 98a384f5147a836439ae6fa98ebc32ac, type: 3}
     - {fileID: 186432034, guid: 98a384f5147a836439ae6fa98ebc32ac, type: 3}
     - {fileID: 186432035, guid: 98a384f5147a836439ae6fa98ebc32ac, type: 3}
+    - {fileID: 1765128720, guid: 98a384f5147a836439ae6fa98ebc32ac, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98a384f5147a836439ae6fa98ebc32ac, type: 3}
 --- !u!4 &6360418578140061287 stripped
 Transform:

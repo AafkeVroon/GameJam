@@ -38,6 +38,7 @@ public class PlayerAttack : MonoBehaviour
             playerMovement.CanMove = false;
             if (Physics.SphereCast(transform.position, attackRange, transform.forward, out hit, 10, hitLayer))
             {
+                transform.rotation = Quaternion.LookRotation(new Vector3(transform.position.x, hit.collider.gameObject.transform.position.y, transform.position.z));
                 anim.SetTrigger("Attack");
                 hit.collider.gameObject.GetComponent<Health>().ModifyHealth(-attackDamage);
                 StartCoroutine(AttackCooldown());
