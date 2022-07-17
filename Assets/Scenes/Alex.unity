@@ -1421,7 +1421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &167620440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3142,7 +3142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAmountPoints: 0
-  pointsText: {fileID: 0}
+  pointsText1: {fileID: 0}
+  pointsText2: {fileID: 0}
 --- !u!1001 &391114113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14138,6 +14139,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  winMenu: {fileID: 0}
+  rollAmountText: {fileID: 0}
+  pointAmountText1: {fileID: 0}
+  pointAmountText2: {fileID: 0}
+  isPaused: 0
 --- !u!1 &1885915317 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6285200094893298329, guid: 2660d45e329f38648ad41c1ec75a5c4a,
