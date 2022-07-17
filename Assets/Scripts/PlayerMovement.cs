@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public bool goLeft;
     public bool goRight;
 
+    public bool CanMove { get { return canMove; } set { canMove = value; } }
+
     private PointScript pointScript;
     private bool canMove;
     private Animator anim;
@@ -85,13 +87,13 @@ public class PlayerMovement : MonoBehaviour
     {
         canMove = false;
         anim.SetTrigger("Hop");
-        pointScript.UsePoint(1);
         StartCoroutine(SetCanMoveToTrue());
     }
 
     private IEnumerator SetCanMoveToTrue()
     {
         yield return new WaitForSeconds(desiredWalkTime + 0.7f);
+        pointScript.UsePoint(1);
         elapsidedTime = 0;
         canMove = true;
     }

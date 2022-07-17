@@ -71,4 +71,9 @@ public class GameManager : MonoBehaviour
             currentTurn = 0;
         }
     }
+
+    public void RemoveEnemy(GameObject self)
+    {
+        characters.Remove(self);
+    }
 }
