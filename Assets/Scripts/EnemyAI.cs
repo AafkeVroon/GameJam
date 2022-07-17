@@ -170,6 +170,7 @@ public class EnemyAI : MonoBehaviour
     private IEnumerator SetCanMoveToTrue()
     {
         yield return new WaitForSeconds(desiredWalkTime + 0.5f);
+        Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS");
         pointScript.UsePoint(1);
         elapsidedTime = 0;
         canMove = true;

@@ -42,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.W) && canMove && goForward)
             {
+                if (!pointScript.CheckEnoughPoints(1))
+                    return;
+
                 nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z + 2);
                 currentPosition = transform.position;
                 transform.rotation = Quaternion.LookRotation(Vector3.forward);
@@ -49,6 +52,8 @@ public class PlayerMovement : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.S) && canMove && goBack)
             {
+                if (pointScript.CheckEnoughPoints(1))
+                    return;
                 nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z - 2);
                 currentPosition = transform.position;
                 transform.rotation = Quaternion.LookRotation(Vector3.back);
@@ -56,6 +61,8 @@ public class PlayerMovement : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.D) && canMove && goRight)
             {
+                if (pointScript.CheckEnoughPoints(1))
+                    return;
                 nextPosition = new Vector3(currentPosition.x + 2, currentPosition.y, currentPosition.z);
                 currentPosition = transform.position;
                 transform.rotation = Quaternion.LookRotation(Vector3.right);
@@ -63,6 +70,8 @@ public class PlayerMovement : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.A) && canMove && goLeft)
             {
+                if (pointScript.CheckEnoughPoints(1))
+                    return;
                 nextPosition = new Vector3(currentPosition.x - 2, currentPosition.y, currentPosition.z);
                 currentPosition = transform.position;
                 transform.rotation = Quaternion.LookRotation(Vector3.left);

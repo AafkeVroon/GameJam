@@ -25,16 +25,26 @@ public class PointScript : MonoBehaviour
         if (CurrentAmountPoints > 0 && amount <= CurrentAmountPoints)
         {
             CurrentAmountPoints -= amount;
-            if (pointsText)
-                pointsText.text = CurrentAmountPoints.ToString();
 
             if(CurrentAmountPoints <= 0)
             {
+                CurrentAmountPoints = 0;
                 gameManager.NextTurn();
                 diceThrower.isTurn = false;
                 Debug.Log("No points");//Show that you have no points lefts
             }
+
+            if (pointsText)
+                pointsText.text = CurrentAmountPoints.ToString();
         }
+    }
+
+    public bool CheckEnoughPoints(int amount)
+    {
+        if (CurrentAmountPoints - amount < 0)
+            return false;
+
+        return true;
     }
 
     public void GetPoints()

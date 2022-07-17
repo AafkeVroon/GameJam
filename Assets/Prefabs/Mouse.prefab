@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 1806719787}
   - component: {fileID: 1806719788}
   - component: {fileID: 1806719784}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mouse
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -171,6 +171,9 @@ MonoBehaviour:
   attackDamage: 2
   attackTime: 1
   attackPointCost: 2
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 128
   enemyFound: 0
 --- !u!1001 &323348258887025459
 PrefabInstance:

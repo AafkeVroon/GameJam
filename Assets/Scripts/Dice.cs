@@ -9,16 +9,21 @@ public class Dice : MonoBehaviour
 
     private Rigidbody rb;
     private GameManager gameManager;
+    private bool check;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         gameManager = GameManager.Instance;
         Destroy(gameObject, 6);
+        StartCoroutine(StartCheck());
     }
 
     private void Update()
     {
+        if (!check)
+            return;
+
         if (rb.velocity.magnitude <= 0.01f)
         {
             if (hasNumber)
@@ -28,12 +33,18 @@ public class Dice : MonoBehaviour
             gameManager.AddPoints(value);
             Debug.Log("JUHDGIHVDWGIDWGUIDWGVHDW");
         }
-        else
-            hasNumber = false;
+        //else
+        //    hasNumber = false;
     }
 
     public void AddForce(Vector3 force, float forcePower)
     {
         rb.AddForce(force * forcePower);
+    }
+
+    private IEnumerator StartCheck()
+    {
+        yield return new WaitForSeconds(0.5f);
+        check = true;
     }
 }

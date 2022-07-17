@@ -76,4 +76,10 @@ public class GameManager : MonoBehaviour
     {
         characters.Remove(self);
     }
+
+    public void EndTurn()
+    {
+        characters[currentTurn].GetComponent<PointScript>().CurrentAmountPoints = 0;
+        NextTurn();
+    }
 }
