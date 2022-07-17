@@ -70,7 +70,31 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7d41757bce2623b4f81f00254c69dee6,
         type: 3}
       propertyPath: m_Name
-      value: lavaDing_05
+      value: lavaDing_05 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7d41757bce2623b4f81f00254c69dee6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d41757bce2623b4f81f00254c69dee6, type: 3}
+--- !u!1 &2426698619479604804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d41757bce2623b4f81f00254c69dee6,
+    type: 3}
+  m_PrefabInstance: {fileID: 3273048583415137045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &-4493602653085004834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426698619479604804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9974209, y: 0.99989235, z: 1.9974209}
+  m_Center: {x: 0, y: -0.50005394, z: 0}

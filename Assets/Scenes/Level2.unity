@@ -1506,6 +1506,7 @@ Transform:
   - {fileID: 951153733}
   - {fileID: 1630275279}
   - {fileID: 375095115}
+  - {fileID: 1043028828}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13262,17 +13263,17 @@ PrefabInstance:
     - target: {fileID: -3723144811836742071, guid: f41793c6e196a414f8514ff2fcbe54f5,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.78
+      value: 1.18
       objectReference: {fileID: 0}
     - target: {fileID: -3723144811836742071, guid: f41793c6e196a414f8514ff2fcbe54f5,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.42
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: -3723144811836742071, guid: f41793c6e196a414f8514ff2fcbe54f5,
         type: 3}
       propertyPath: m_Size.z
-      value: 1.85
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: -3723144811836742071, guid: f41793c6e196a414f8514ff2fcbe54f5,
         type: 3}
@@ -13282,7 +13283,7 @@ PrefabInstance:
     - target: {fileID: -3723144811836742071, guid: f41793c6e196a414f8514ff2fcbe54f5,
         type: 3}
       propertyPath: m_Center.y
-      value: 0.67
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 1465043255029540576, guid: f41793c6e196a414f8514ff2fcbe54f5,
         type: 3}
@@ -16022,6 +16023,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 812931233}
     m_Modifications:
+    - target: {fileID: 3947782143400566726, guid: e084d0e69d4ead74984f1f971695ce30,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 3947782143400566726, guid: e084d0e69d4ead74984f1f971695ce30,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 3947782143400566726, guid: e084d0e69d4ead74984f1f971695ce30,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1.02
+      objectReference: {fileID: 0}
     - target: {fileID: 4723956429402861291, guid: e084d0e69d4ead74984f1f971695ce30,
         type: 3}
       propertyPath: m_RootOrder
@@ -17507,6 +17523,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1042500247}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1043028827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1043028828}
+  - component: {fileID: 1043028829}
+  m_Layer: 0
+  m_Name: Border (42)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1043028828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043028827}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.73274803, y: -0.33378506, z: 10.429517}
+  m_LocalScale: {x: 38.86, y: 1, z: 30.21}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 97572085}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &1043028829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043028827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1061080735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4232783832663081210, guid: 39a758e7c5f249c4f96ae7e26bc7598a,
@@ -25762,7 +25823,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: -19.17
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -32487,11 +32548,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountOfDices: 1
-  throwForce: 250
+  throwForce: 8
   maxPoints: 0
   dicePrefab: {fileID: 5025266602348806400, guid: dd8aafb3dce5ee64bb002f94ee55433a,
     type: 3}
-  diceSpawnpoint: {fileID: 632416837}
   characterPrefabs:
   - {fileID: 6903463533773330923, guid: b6490a9972bd4b144830f2b838b8e82a, type: 3}
   - {fileID: 8434530398517990700, guid: 6afa6d32a8e3b1d4799321119dca37f5, type: 3}
@@ -35914,7 +35974,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137413179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.75, y: 0.65, z: -13}
+  m_LocalPosition: {x: -12.75, y: 0.84, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
