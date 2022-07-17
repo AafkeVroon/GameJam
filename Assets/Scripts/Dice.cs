@@ -51,6 +51,7 @@ public class Dice : MonoBehaviour
     private IEnumerator HideDice()
     {
         yield return new WaitForSeconds(6);
+        
         gameObject.SetActive(false);
         Destroy(gameObject, 3);
     }
