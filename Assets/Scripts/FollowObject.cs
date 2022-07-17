@@ -23,5 +23,7 @@ public class FollowObject : MonoBehaviour
     private void FollowTarget()
     {
         transform.position = followGameObject.transform.position;
+        if (followGameObject == null)
+            Destroy(gameObject);
     }
 }

@@ -96,7 +96,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (Physics.SphereCast(transform.position, attackRange, transform.forward, out hit))
         {
-            if (hit.collider.gameObject.CompareTag("Player"))
+            if (EnemyFound)//hit.collider.gameObject.CompareTag("Player")
             {
                 float rnd = Random.Range(0, 101);
                 Debug.Log(rnd + "RNDNRNDRNDRNDRNDRNDRND");

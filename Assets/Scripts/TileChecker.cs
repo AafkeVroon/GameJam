@@ -31,6 +31,10 @@ public class TileChecker : MonoBehaviour
         {
             playerAttack.EnemyFound = true;
         }
+        if (enemyAI && other.gameObject.CompareTag("Player") && !enemyAI.EnemyFound)
+        {
+            enemyAI.EnemyFound = true;
+        }
 
         if (other.gameObject.CompareTag("Tile") || other.gameObject.CompareTag("Gate")
             || other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Checker"))
@@ -101,6 +105,12 @@ public class TileChecker : MonoBehaviour
         {
             if (playerAttack)
                 playerAttack.EnemyFound = false;
+        }
+
+        if (other.gameObject.CompareTag("Player"))
+        {
+            if (enemyAI)
+                enemyAI.EnemyFound = false;
         }
 
         if (other.gameObject.CompareTag("Tile"))
