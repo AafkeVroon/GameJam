@@ -36,9 +36,14 @@ public class PlayerAttack : MonoBehaviour
                 return;
 
             playerMovement.CanMove = false;
+            Collider[] objectsMulti = Physics.OverlapSphere(transform.position, attackRange);
+            foreach (Collider item in objectsMulti)
+            {
+
+            }
             if (Physics.SphereCast(transform.position, attackRange, transform.forward, out hit, 10, hitLayer))
             {
-                transform.rotation = Quaternion.LookRotation(new Vector3(transform.position.x, hit.collider.gameObject.transform.position.y, transform.position.z));
+                //transform.LookAt(playerObject.transform, Vector3.up);
                 anim.SetTrigger("Attack");
                 hit.collider.gameObject.GetComponent<Health>().ModifyHealth(-attackDamage);
                 StartCoroutine(AttackCooldown());

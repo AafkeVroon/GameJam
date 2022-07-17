@@ -118,7 +118,6 @@ MonoBehaviour:
   desiredWalkTime: 0.7
   tileCheckerPrefab: {fileID: 7412906721748837891, guid: b139b765544520f44a3803b59fa89082,
     type: 3}
-  movement: 0
   attackRange: 3
   attackDamage: 1
   attackTime: 1

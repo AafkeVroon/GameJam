@@ -1934,7 +1934,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b7715c11f972794799b9cf5641c96ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 861ca38ba51610d46988f826732f9a39, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2705,6 +2705,9 @@ MonoBehaviour:
   rollAmountText: {fileID: 288284956}
   pointAmountText1: {fileID: 113928610}
   pointAmountText2: {fileID: 127020065}
+  healthText: {fileID: 1208004145}
+  spritePlayer: {fileID: 1017742840}
+  spriteSlime: {fileID: 50710743}
   isPaused: 0
 --- !u!1 &6285200096158802822
 GameObject:

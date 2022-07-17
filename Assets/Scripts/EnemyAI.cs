@@ -32,6 +32,8 @@ public class EnemyAI : MonoBehaviour
     private float timer;
     private RaycastHit hit;
 
+    private GameObject playerObject;
+
     private void Start()
     {
         pointScript = GetComponent<PointScript>();
@@ -41,6 +43,7 @@ public class EnemyAI : MonoBehaviour
         canMove = true;
         currentPosition = transform.position;
         timer = 0.5f;
+        playerObject = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()
@@ -93,7 +96,7 @@ public class EnemyAI : MonoBehaviour
             {
                 float rnd = Random.Range(0, 101);
                 Debug.Log(rnd + "RNDNRNDRNDRNDRNDRNDRND");
-                if (rnd < 101)//20
+                if (rnd < 0)//20
                 {
                     Move();
                 }
@@ -119,13 +122,14 @@ public class EnemyAI : MonoBehaviour
 
         canMove = false;
         isAttacking = true;
-        if (Physics.SphereCast(transform.position, attackRange, transform.forward, out hit, 10, hitLayer))
+        float distance = (playerObject.transform.position - transform.position).magnitude;
+        if (distance <= attackRange)
         {
+            transform.LookAt(playerObject.transform, Vector3.up);
             anim.SetTrigger("Attack");
-            hit.collider.gameObject.GetComponent<Health>().ModifyHealth(-attackDamage);
+            playerObject.GetComponent<Health>().ModifyHealth(-attackDamage);
             StartCoroutine(AttackCooldown());
         }
-            Debug.Log("ICANATTACKHELPMEEEEE" );
     }
 
     private void Move()
