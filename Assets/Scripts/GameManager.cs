@@ -76,6 +76,8 @@ public class GameManager : MonoBehaviour
     public void RemoveEnemy(GameObject self)
     {
         characters.Remove(self);
+        //if(characters.Count <= 0)
+        //    //Win
     }
 
     public void EndTurn()

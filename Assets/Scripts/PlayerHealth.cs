@@ -26,7 +26,7 @@ public class PlayerHealth : Health
     /// </summary>
     public void Dead()
     {
-        //Cursor.lockState = CursorLockMode.None;
+        InterfaceManager.Instance.ShowWinMenu();
         //GameManager.instance.SetGameOver();
     }
 }
