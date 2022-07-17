@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float throwForce = 5;
     [SerializeField] private int maxPoints;
     [SerializeField] private GameObject dicePrefab;
-    [SerializeField] private Transform diceSpawnpoint;
     [SerializeField] private List<GameObject> characterPrefabs;
     [SerializeField] private List<GameObject> characterSpawnpoints;
 
@@ -32,11 +31,6 @@ public class GameManager : MonoBehaviour
         SpawnCharacters();
     }
 
-    private void Start()
-    {
-        diceSpawnpoint = PlayerObject.transform;
-    }
-
     public void AddPoints(int amount)
     {
         MaxPoints = amount;
@@ -44,7 +38,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(MaxPoints);
     }
 
-    public void ThrowDice()
+    public void ThrowDice(Transform diceSpawnpoint)
     {
         for (int i = 0; i < amountOfDices; i++)
         {

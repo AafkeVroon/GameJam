@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DiceThrower : MonoBehaviour
 {
+    [SerializeField] private Transform diceSpawnpoint;
+
     public bool isTurn;
     public bool canThrow;
 
@@ -28,13 +30,13 @@ public class DiceThrower : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    gameManager.ThrowDice();
+                    gameManager.ThrowDice(diceSpawnpoint);
                     canThrow = false;
                 }
             }
             else
             {
-                gameManager.ThrowDice();
+                gameManager.ThrowDice(diceSpawnpoint);
                 canThrow = false;
             }
         }
