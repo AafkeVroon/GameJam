@@ -85,7 +85,7 @@ public class EnemyAI : MonoBehaviour
         canMove = false;
         //anim.SetTrigger("Hop");
         //pointScript.UsePoint(1);
-        StartCoroutine(SetCanMoveToTrue());
+        StartCoroutine(ResetStats());
     }
 
     private void CheckAction()
@@ -201,9 +201,9 @@ public class EnemyAI : MonoBehaviour
         nextMove = false;
     }
 
-    private IEnumerator SetCanMoveToTrue()
+    private IEnumerator ResetStats()
     {
-        yield return new WaitForSeconds(desiredWalkTime + 0.5f);
+        yield return new WaitForSeconds(desiredWalkTime + 0.1f);
         pointScript.UsePoint(1);
         elapsidedTime = 0;
         canMove = true;
