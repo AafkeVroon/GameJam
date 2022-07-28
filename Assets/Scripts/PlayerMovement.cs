@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Tooltip("How long walking takes")]
     [SerializeField] private float desiredWalkTime = 2;
     [SerializeField] private GameObject tileCheckerPrefab;
     [SerializeField] private AudioClip walkSound;
@@ -23,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private float elapsidedTime;
     private AudioSource audioSource;
 
-    private void Start()
+    private void Awake()
     {
         pointScript = GetComponent<PointScript>();
         anim = GetComponent<Animator>();
@@ -36,52 +37,52 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (InterfaceManager.Instance.isPaused || !pointScript.DiceThrower.isTurn)
+            return;
+
         Move();
     }
 
     private void Move()
     {
-        if (!InterfaceManager.Instance.isPaused)
+        if (pointScript.CurrentAmountPoints > 0)
         {
-            if (pointScript.CurrentAmountPoints > 0)
+            if (Input.GetKeyDown(KeyCode.W) && canMove && goForward)
             {
-                if (Input.GetKeyDown(KeyCode.W) && canMove && goForward)
-                {
-                    if (!pointScript.CheckEnoughPoints(1))
-                        return;
+                //if (!pointScript.CheckEnoughPoints(1))
+                //    return;
 
-                    nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z + 2);
-                    currentPosition = transform.position;
-                    transform.rotation = Quaternion.LookRotation(Vector3.forward);
-                    UseAction();
-                }
-                if (Input.GetKeyDown(KeyCode.S) && canMove && goBack)
-                {
-                    if (!pointScript.CheckEnoughPoints(1))
-                        return;
-                    nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z - 2);
-                    currentPosition = transform.position;
-                    transform.rotation = Quaternion.LookRotation(Vector3.back);
-                    UseAction();
-                }
-                if (Input.GetKeyDown(KeyCode.D) && canMove && goRight)
-                {
-                    if (!pointScript.CheckEnoughPoints(1))
-                        return;
-                    nextPosition = new Vector3(currentPosition.x + 2, currentPosition.y, currentPosition.z);
-                    currentPosition = transform.position;
-                    transform.rotation = Quaternion.LookRotation(Vector3.right);
-                    UseAction();
-                }
-                if (Input.GetKeyDown(KeyCode.A) && canMove && goLeft)
-                {
-                    if (!pointScript.CheckEnoughPoints(1))
-                        return;
-                    nextPosition = new Vector3(currentPosition.x - 2, currentPosition.y, currentPosition.z);
-                    currentPosition = transform.position;
-                    transform.rotation = Quaternion.LookRotation(Vector3.left);
-                    UseAction();
-                }
+                nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z + 2);
+                currentPosition = transform.position;
+                transform.rotation = Quaternion.LookRotation(Vector3.forward);
+                UseAction();
+            }
+            if (Input.GetKeyDown(KeyCode.S) && canMove && goBack)
+            {
+                //if (!pointScript.CheckEnoughPoints(1))
+                //    return;
+                nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z - 2);
+                currentPosition = transform.position;
+                transform.rotation = Quaternion.LookRotation(Vector3.back);
+                UseAction();
+            }
+            if (Input.GetKeyDown(KeyCode.D) && canMove && goRight)
+            {
+                //if (!pointScript.CheckEnoughPoints(1))
+                //    return;
+                nextPosition = new Vector3(currentPosition.x + 2, currentPosition.y, currentPosition.z);
+                currentPosition = transform.position;
+                transform.rotation = Quaternion.LookRotation(Vector3.right);
+                UseAction();
+            }
+            if (Input.GetKeyDown(KeyCode.A) && canMove && goLeft)
+            {
+                //if (!pointScript.CheckEnoughPoints(1))
+                //    return;
+                nextPosition = new Vector3(currentPosition.x - 2, currentPosition.y, currentPosition.z);
+                currentPosition = transform.position;
+                transform.rotation = Quaternion.LookRotation(Vector3.left);
+                UseAction();
             }
         }
 
@@ -90,9 +91,9 @@ public class PlayerMovement : MonoBehaviour
             elapsidedTime += Time.deltaTime;
             float percentage = elapsidedTime / desiredWalkTime;
             transform.position = Vector3.Lerp(currentPosition, nextPosition, percentage);
-            if (percentage > 0.97f)
+            if (percentage > 0.98f)
             {
-                transform.position = new Vector3(nextPosition.x, nextPosition.y, nextPosition.z);
+                transform.position = nextPosition;
                 currentPosition = transform.position;
             }
         }

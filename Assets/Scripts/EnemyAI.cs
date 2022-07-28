@@ -62,7 +62,8 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
-        LerpMove();
+        if (pointScript.CurrentAmountPoints > 0)
+            LerpMove();
     }
 
     private void LerpMove()
@@ -72,26 +73,24 @@ public class EnemyAI : MonoBehaviour
             elapsidedTime += Time.deltaTime;
             float percentage = elapsidedTime / desiredWalkTime;
             transform.position = Vector3.Lerp(currentPosition, nextPosition, percentage);
-            if (percentage > 0.97f)
+            if (percentage > 0.98f)
             {
-                transform.position = new Vector3(nextPosition.x, nextPosition.y, nextPosition.z);
+                transform.position = nextPosition;
                 currentPosition = transform.position;
             }
         }
     }
 
-    private void UseAction()
+    private void StartMovement()
     {
         canMove = false;
-        //anim.SetTrigger("Hop");
-        //pointScript.UsePoint(1);
         StartCoroutine(ResetStats());
     }
 
     private void CheckAction()
     {
-        if (Physics.SphereCast(transform.position, attackRange, transform.forward, out hit))
-        {
+        //if (Physics.SphereCast(transform.position, attackRange, transform.forward, out hit))
+        //{
             if (EnemyFound)
             {
                 float rnd = Random.Range(0, 101);
@@ -102,8 +101,10 @@ public class EnemyAI : MonoBehaviour
                 }
                 else
                 {
-                    //Attack
-                    Attack();
+                    if (!pointScript.CheckEnoughPoints(attackPointCost))
+                        Move();
+                    else
+                        Attack();
                     Debug.Log(",,.,..,,.,..,..,.,,.,..,,.,.,.,.,..,.,,.`1");
                 }
             }
@@ -112,16 +113,13 @@ public class EnemyAI : MonoBehaviour
                 Debug.Log("1823784789438793247923547903245790");
                 Move();
             }
-        }
+        //}
     }
 
     private void Attack()
     {
-        if (!pointScript.CheckEnoughPoints(attackPointCost))
-            return;
-
-        canMove = false;
         isAttacking = true;
+        canMove = false;
         float distance = (playerObject.transform.position - transform.position).magnitude;
         if (distance <= attackRange)
         {
@@ -138,53 +136,53 @@ public class EnemyAI : MonoBehaviour
         switch (direction)
         {
             case 0:
-                if (canMove && goForward)
+                if (canMove && goForward)//for
                 {
                     if (!pointScript.CheckEnoughPoints(1))
                         return;
                     nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z + 2);
                     currentPosition = transform.position;
                     transform.rotation = Quaternion.LookRotation(Vector3.forward);
-                    UseAction();
+                    StartMovement();
                 }
                 else
                     Move();
                 break;
             case 1:
-                if (canMove && goBack)
+                if (canMove && goBack)//back
                 {
                     if (!pointScript.CheckEnoughPoints(1))
                         return;
                     nextPosition = new Vector3(currentPosition.x, currentPosition.y, currentPosition.z - 2);
                     currentPosition = transform.position;
                     transform.rotation = Quaternion.LookRotation(Vector3.back);
-                    UseAction();
+                    StartMovement();
                 }
                 else
                     Move();
                 break;
             case 2:
-                if (canMove && goRight)
+                if (canMove && goRight)//right
                 {
                     if (!pointScript.CheckEnoughPoints(1))
                         return;
                     nextPosition = new Vector3(currentPosition.x + 2, currentPosition.y, currentPosition.z);
                     currentPosition = transform.position;
                     transform.rotation = Quaternion.LookRotation(Vector3.right);
-                    UseAction();
+                    StartMovement();
                 }
                 else
                     Move();
                 break;
             case 3:
-                if (canMove && goLeft)
+                if (canMove && goLeft)//left
                 {
                     if (!pointScript.CheckEnoughPoints(1))
                         return;
                     nextPosition = new Vector3(currentPosition.x - 2, currentPosition.y, currentPosition.z);
                     currentPosition = transform.position;
                     transform.rotation = Quaternion.LookRotation(Vector3.left);
-                    UseAction();
+                    StartMovement();
                 }
                 else
                     Move();
@@ -203,7 +201,7 @@ public class EnemyAI : MonoBehaviour
 
     private IEnumerator ResetStats()
     {
-        yield return new WaitForSeconds(desiredWalkTime + 0.1f);
+        yield return new WaitForSeconds(desiredWalkTime + 0.15f);
         pointScript.UsePoint(1);
         elapsidedTime = 0;
         canMove = true;

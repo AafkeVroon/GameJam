@@ -37,9 +37,9 @@ public class PointScript : MonoBehaviour
             if (CurrentAmountPoints <= 0)
             {
                 CurrentAmountPoints = 0;
-                gameManager.NextTurn();
                 diceThrower.isTurn = false;
-                Debug.Log("No points");//Show that you have no points lefts
+                gameManager.NextTurn();
+                Debug.Log("No points");
             }
 
             if (pointsText1)
