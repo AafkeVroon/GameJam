@@ -8,7 +8,7 @@ public class TileChecker : MonoBehaviour
 
     private PlayerMovement playerMovement;
     private PlayerAttack playerAttack;
-    private EnemyAI enemyAI;
+    private EnemyMovement enemyAI;
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public class TileChecker : MonoBehaviour
         }
         else
         {
-            enemyAI = followObject.GetComponent<EnemyAI>();
+            enemyAI = followObject.GetComponent<EnemyMovement>();
         }
     }
 
@@ -101,17 +101,17 @@ public class TileChecker : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            if (playerAttack)
-                playerAttack.EnemyFound = false;
-        }
+        //if (other.gameObject.CompareTag("Enemy"))
+        //{
+        //    if (playerAttack)
+        //        playerAttack.EnemyFound = false;
+        //}
 
-        if (other.gameObject.CompareTag("Player"))
-        {
-            if (enemyAI)
-                enemyAI.EnemyFound = false;
-        }
+        //if (other.gameObject.CompareTag("Player"))
+        //{
+        //    if (enemyAI)
+        //        enemyAI.EnemyFound = false;
+        //}
 
         if (other.gameObject.CompareTag("Tile"))
         {
