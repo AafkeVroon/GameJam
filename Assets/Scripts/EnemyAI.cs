@@ -19,8 +19,6 @@ public class EnemyAI : MonoBehaviour
         pointScript = GetComponent<PointScript>();
         enemyMovement = GetComponent<EnemyMovement>();
         enemyAttack = GetComponent<EnemyAttack>();
-        GameObject checker = Instantiate(tileCheckerPrefab);
-        checker.GetComponent<FollowObject>().followGameObject = gameObject;
         timer = 0.5f;
     }
 
