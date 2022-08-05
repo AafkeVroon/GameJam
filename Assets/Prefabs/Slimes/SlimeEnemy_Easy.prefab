@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 234796653}
   m_Layer: 0
   m_Name: AttackPosition
-  m_TagString: Checker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

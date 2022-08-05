@@ -33,24 +33,6 @@ public class TileChecker : MonoBehaviour
                     break;
             }
         }
-        else
-        {
-            switch (direction)
-            {
-                case 0:
-                    movement.goForward = false;
-                    break;
-                case 1:
-                    movement.goBack = false;
-                    break;
-                case 2:
-                    movement.goLeft = false;
-                    break;
-                case 3:
-                    movement.goRight = false;
-                    break;
-            }
-        }
     }
 
     private void OnTriggerExit(Collider other)

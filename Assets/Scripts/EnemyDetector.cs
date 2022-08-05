@@ -11,7 +11,7 @@ public class EnemyDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (attack && !attack.EnemyFound && other.gameObject.CompareTag("Enemy") | other.gameObject.CompareTag("Player"))
+        if (attack && !attack.EnemyFound && attack.gameObject.tag != other.gameObject.tag && other.gameObject.CompareTag("Enemy") | other.gameObject.CompareTag("Player"))
         {
             attack.EnemyFound = true;
             attack.Enemy = other.gameObject;
