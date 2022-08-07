@@ -25,6 +25,9 @@ public class Dice : MonoBehaviour
 
     private void Update()
     {
+        if (gameManager.GetGameState() != GameState.Game)
+            return;
+
         if (!check)
             return;
 
@@ -35,10 +38,7 @@ public class Dice : MonoBehaviour
 
             hasNumber = true;
             gameManager.AddPoints(value);
-            Debug.Log("JUHDGIHVDWGIDWGUIDWGVHDW");
         }
-        //else
-        //    hasNumber = false;
     }
 
     public void AddForce(Vector3 force, float forcePower)

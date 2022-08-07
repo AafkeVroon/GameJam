@@ -2,10 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum GameState
+{
+    Game,
+    Menu,
+    Paused,
+    Restarting
+}
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    [Tooltip("The current state of the game")]
+    [SerializeField] private GameState gameState;
     [SerializeField] private int amountOfDices = 3;
     [SerializeField] private float throwForce = 5;
     [SerializeField] private int maxPoints;
@@ -17,6 +27,7 @@ public class GameManager : MonoBehaviour
     public int AmountOfDices { get { return amountOfDices; } }
     public GameObject PlayerObject { get { return characters[0]; } }
 
+    private InterfaceManager interfaceManager;
     private int amountOfCharacters;
     private int currentTurn;
     private List<GameObject> characters = new List<GameObject>();
@@ -28,8 +39,38 @@ public class GameManager : MonoBehaviour
         else
             Instance = this;
 
+        interfaceManager = InterfaceManager.Instance;
         amountOfCharacters = characterPrefabs.Count;
         SpawnCharacters();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && gameState != GameState.Restarting && gameState != GameState.Menu)
+        {
+            if (gameState == GameState.Paused)
+            {
+                UnPause();
+            }
+            else if (gameState == GameState.Game)
+            {
+                Pause();
+            }
+        }
+    }
+
+    public void UnPause()
+    {
+        interfaceManager.ShowPauseMenu(false);
+        SetGameState(GameState.Game);
+        //Time.timeScale = 1;
+    }
+
+    public void Pause()
+    {
+        interfaceManager.ShowPauseMenu(true);
+        SetGameState(GameState.Paused);
+        //Time.timeScale = 0;
     }
 
     public void AddPoints(int amount)
@@ -89,5 +130,23 @@ public class GameManager : MonoBehaviour
     {
         characters[currentTurn].GetComponent<PointScript>().CurrentAmountPoints = 0;
         NextTurn();
+    }
+
+    /// <summary>
+    /// Get the current game state
+    /// </summary>
+    /// <returns></returns>
+    public GameState GetGameState()
+    {
+        return gameState;
+    }
+
+    /// <summary>
+    /// Set the game state with enum
+    /// </summary>
+    /// <param name="state">What state it needs to be</param>
+    public void SetGameState(GameState state)
+    {
+        gameState = state;
     }
 }

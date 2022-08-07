@@ -11,6 +11,7 @@ public class EnemyAI : MonoBehaviour
     private PointScript pointScript;
     private EnemyMovement enemyMovement;
     private EnemyAttack enemyAttack;
+    private GameManager gameManager;
     private bool nextMove;
     private float timer;
 
@@ -19,12 +20,13 @@ public class EnemyAI : MonoBehaviour
         pointScript = GetComponent<PointScript>();
         enemyMovement = GetComponent<EnemyMovement>();
         enemyAttack = GetComponent<EnemyAttack>();
+        gameManager = GameManager.Instance;
         timer = 0.5f;
     }
 
     private void Update()
     {
-        if (!pointScript.DiceThrower.isTurn || InterfaceManager.Instance.isPaused)
+        if (!pointScript.DiceThrower.isTurn || gameManager.GetGameState() != GameState.Game)
             return;
 
         if (!nextMove && pointScript.CurrentAmountPoints > 0)

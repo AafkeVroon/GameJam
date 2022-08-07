@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class DiceThrower : MonoBehaviour
 {
     [SerializeField] private Transform diceSpawnpoint;
-    [SerializeField] private TextMeshProUGUI amountOfThrowsText;
 
     public bool isTurn;
     public bool canThrow;
 
     public int CurrentAmountOfThrows { get { return currentAmountOfThrows; } set { currentAmountOfThrows = value; } }
 
+    private TextMeshProUGUI amountOfThrowsText;
     private GameManager gameManager;
     private int currentAmountOfThrows;
 
@@ -33,7 +33,7 @@ public class DiceThrower : MonoBehaviour
 
     private void Update()
     {
-        if (!isTurn || InterfaceManager.Instance.isPaused)
+        if (!isTurn || gameManager.GetGameState() != GameState.Game)
             return;
 
         if (canThrow)

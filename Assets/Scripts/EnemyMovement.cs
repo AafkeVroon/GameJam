@@ -13,7 +13,7 @@ public class EnemyMovement : Movement
 
     public override void Update()
     {
-        if (!pointScript.DiceThrower.isTurn || InterfaceManager.Instance.isPaused)
+        if (!pointScript.DiceThrower.isTurn || gameManager.GetGameState() != GameState.Game)
             return;
 
         if (!CanMove)

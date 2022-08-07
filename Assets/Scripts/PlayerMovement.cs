@@ -6,7 +6,7 @@ public class PlayerMovement : Movement
 {
     public override void Update()
     {
-        if (InterfaceManager.Instance.isPaused || !pointScript.DiceThrower.isTurn)
+        if (gameManager.GetGameState() != GameState.Game || !pointScript.DiceThrower.isTurn)
             return;
 
         Move();
@@ -42,5 +42,14 @@ public class PlayerMovement : Movement
         {
             LerpMove();
         }
+    }
+
+    public override void UseAction()
+    {
+        CanMove = false;
+        anim.SetTrigger("Hop");
+        if (walkSound)
+            audioSource.PlayOneShot(walkSound);
+        StartCoroutine(SetCanMoveToTrue());
     }
 }

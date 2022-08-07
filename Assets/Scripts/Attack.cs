@@ -23,6 +23,7 @@ public class Attack : MonoBehaviour
     private protected Animator anim;
     private protected RaycastHit hit;
     private protected AudioSource audioSource;
+    private protected GameManager gameManager;
 
     public virtual void Start()
     {
@@ -30,11 +31,12 @@ public class Attack : MonoBehaviour
         movement = GetComponent<Movement>();
         audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
+        gameManager = GameManager.Instance;
     }
 
     public virtual void Update()
     {
-        if (InterfaceManager.Instance.isPaused || !pointScript.DiceThrower.isTurn || !EnemyFound | !movement.CanMove)
+        if (gameManager.GetGameState() != GameState.Game || !pointScript.DiceThrower.isTurn || !EnemyFound | !movement.CanMove)
             return;
 
         if (Input.GetMouseButtonDown(1))

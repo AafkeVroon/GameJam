@@ -16,13 +16,14 @@ public class Movement : MonoBehaviour
 
     public bool CanMove { get { return canMove; } set { canMove = value; } }
 
-    private protected PointScript pointScript;
     private bool canMove;
+    private protected PointScript pointScript;
     private protected Animator anim;
     private protected Vector3 nextPosition;
     private protected Vector3 currentPosition;
     private protected float elapsidedTime;
     private protected AudioSource audioSource;
+    private protected GameManager gameManager;
 
     private void Awake()
     {
@@ -33,6 +34,7 @@ public class Movement : MonoBehaviour
         checker.GetComponent<FollowObject>().followGameObject = gameObject;
         CanMove = true;
         currentPosition = transform.position;
+        gameManager = GameManager.Instance;
     }
 
     public virtual void Update() { }
@@ -64,7 +66,6 @@ public class Movement : MonoBehaviour
     public virtual void UseAction()
     {
         CanMove = false;
-        //anim.SetTrigger("Hop");
         if (walkSound)
             audioSource.PlayOneShot(walkSound);
         StartCoroutine(SetCanMoveToTrue());

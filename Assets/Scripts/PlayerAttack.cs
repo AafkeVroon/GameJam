@@ -6,7 +6,7 @@ public class PlayerAttack : Attack
 {
     public override void Update()
     {
-        if (InterfaceManager.Instance.isPaused || !pointScript.DiceThrower.isTurn || !EnemyFound | !movement.CanMove)
+        if (gameManager.GetGameState() != GameState.Game || !pointScript.DiceThrower.isTurn || !EnemyFound | !movement.CanMove)
             return;
 
         if (Input.GetMouseButtonDown(1))
