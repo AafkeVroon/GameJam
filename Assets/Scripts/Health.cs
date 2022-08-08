@@ -5,7 +5,8 @@ using System.Collections;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private AudioClip hurtSound;
+    [SerializeField] private protected AudioClip hurtSound;
+    [SerializeField] private protected GameObject hurtEffect;
     [Tooltip("How much health you have")]
     [SerializeField] private protected int health;
     [Tooltip("The health ui")]
@@ -19,7 +20,7 @@ public class Health : MonoBehaviour
 
     public int HP { get { return health; } set { health = value; } }
 
-    private AudioSource audioSource;
+    private protected AudioSource audioSource;
 
     public virtual void Start()
     {
@@ -36,6 +37,8 @@ public class Health : MonoBehaviour
             audioSource.PlayOneShot(hurtSound);
         if (healthUI)
             healthUI.text = health.ToString();
+        if (hurtEffect)
+            Instantiate(hurtEffect, transform.position, transform.rotation);
 
         if (HP <= 0)
         {

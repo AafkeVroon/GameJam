@@ -16,7 +16,10 @@ public class PlayerHealth : Health
 
         if (healthUI)
             healthUI.text = health.ToString();
-
+        if (hurtSound)
+            audioSource.PlayOneShot(hurtSound);
+        if (hurtEffect)
+            Instantiate(hurtEffect, transform.position, transform.rotation);
         if (HP <= 0)
             onHealthZero.Invoke();
     }
@@ -26,6 +29,6 @@ public class PlayerHealth : Health
     /// </summary>
     public void Dead()
     {
-        SceneManager.LoadScene("GameOver");
+        InterfaceManager.Instance.LoadLevelWithScreen("GameOver");
     }
 }

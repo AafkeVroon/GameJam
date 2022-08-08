@@ -39,9 +39,13 @@ public class GameManager : MonoBehaviour
         else
             Instance = this;
 
-        interfaceManager = InterfaceManager.Instance;
         amountOfCharacters = characterPrefabs.Count;
         SpawnCharacters();
+    }
+
+    private void Start()
+    {
+        interfaceManager = InterfaceManager.Instance;
     }
 
     private void Update()
@@ -61,16 +65,21 @@ public class GameManager : MonoBehaviour
 
     public void UnPause()
     {
+        SetTimeScale(1);
         interfaceManager.ShowPauseMenu(false);
         SetGameState(GameState.Game);
-        //Time.timeScale = 1;
     }
 
     public void Pause()
     {
         interfaceManager.ShowPauseMenu(true);
         SetGameState(GameState.Paused);
-        //Time.timeScale = 0;
+        SetTimeScale(0);
+    }
+
+    public void SetTimeScale(float value)
+    {
+        Time.timeScale = value;
     }
 
     public void AddPoints(int amount)
@@ -104,16 +113,16 @@ public class GameManager : MonoBehaviour
         if (currentTurn < characters.Count - 1)
         {
             currentTurn++;
-            InterfaceManager.Instance.spritePlayer.SetActive(false);
-            InterfaceManager.Instance.spriteSlime.SetActive(true);
+            interfaceManager.spritePlayer.SetActive(false);
+            interfaceManager.spriteSlime.SetActive(true);
             characters[currentTurn].GetComponent<DiceThrower>().isTurn = true;
             characters[currentTurn].GetComponent<DiceThrower>().canThrow = true;
         }
         else
         {
             currentTurn = 0;
-            InterfaceManager.Instance.spritePlayer.SetActive(true);
-            InterfaceManager.Instance.spriteSlime.SetActive(false);
+            interfaceManager.spritePlayer.SetActive(true);
+            interfaceManager.spriteSlime.SetActive(false);
             characters[currentTurn].GetComponent<DiceThrower>().isTurn = true;
             characters[currentTurn].GetComponent<DiceThrower>().canThrow = true;
         }
@@ -123,7 +132,7 @@ public class GameManager : MonoBehaviour
     {
         characters.Remove(self);
         if (characters.Count <= 1)
-            InterfaceManager.Instance.ShowWinMenu();
+            interfaceManager.ShowWinMenu();
     }
 
     public void EndTurn()

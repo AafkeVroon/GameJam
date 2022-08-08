@@ -135,6 +135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -228,6 +233,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -393,6 +403,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_01 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5364530043259413040, guid: 717ac4cb23d9d1845bd39081fe3414c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 717ac4cb23d9d1845bd39081fe3414c3, type: 3}
 --- !u!4 &37318818 stripped
@@ -431,6 +446,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -541,6 +561,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -649,6 +674,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -804,6 +834,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -957,6 +992,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_04 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
@@ -1187,6 +1227,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -1286,6 +1331,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_04 Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
@@ -1395,6 +1445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -1606,6 +1661,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -1714,6 +1774,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_06 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
@@ -1824,6 +1889,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -1933,6 +2003,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_06 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
       propertyPath: m_RootOrder
@@ -2026,6 +2101,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_06 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
@@ -2142,6 +2222,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_02 Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -2250,6 +2335,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -2360,6 +2450,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_06 Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
       propertyPath: m_RootOrder
@@ -2469,6 +2564,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -2577,6 +2677,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -2703,6 +2808,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -2812,6 +2922,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_04 Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -2920,6 +3035,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -3280,6 +3400,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -3567,6 +3692,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_02 Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -3675,6 +3805,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -3785,6 +3920,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -3878,6 +4018,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -4033,6 +4178,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_04 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -4126,6 +4276,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -4306,6 +4461,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_01 Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5364530043259413040, guid: 717ac4cb23d9d1845bd39081fe3414c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 717ac4cb23d9d1845bd39081fe3414c3, type: 3}
 --- !u!4 &486290297 stripped
@@ -4344,6 +4504,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -4529,6 +4694,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -4622,6 +4792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -4731,6 +4906,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -4911,6 +5091,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_01 Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5364530043259413040, guid: 717ac4cb23d9d1845bd39081fe3414c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 717ac4cb23d9d1845bd39081fe3414c3, type: 3}
 --- !u!4 &603658001 stripped
@@ -4949,6 +5134,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -5059,6 +5249,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -5152,6 +5347,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -5262,6 +5462,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -5370,6 +5575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -5480,6 +5690,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -5588,6 +5803,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -5698,6 +5918,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_02 Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -5807,6 +6032,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -5900,6 +6130,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -6010,6 +6245,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -6103,6 +6343,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -6212,6 +6457,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_06 Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
@@ -6437,6 +6687,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_02 Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -6659,6 +6914,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_04 Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -6768,6 +7028,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -6876,6 +7141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_06 Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
@@ -7101,6 +7371,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_01 Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5364530043259413040, guid: 717ac4cb23d9d1845bd39081fe3414c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 717ac4cb23d9d1845bd39081fe3414c3, type: 3}
 --- !u!4 &854663412 stripped
@@ -7184,6 +7459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -7339,6 +7619,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_06 Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
       propertyPath: m_RootOrder
@@ -7447,6 +7732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -7557,6 +7847,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_02 Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -7650,6 +7945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -7760,6 +8060,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_06 Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
       propertyPath: m_RootOrder
@@ -7868,6 +8173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -7978,6 +8288,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -8087,6 +8402,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -8195,6 +8515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -8381,6 +8706,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -8489,6 +8819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -8604,6 +8939,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -8773,6 +9113,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -8881,6 +9226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -9046,6 +9396,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_01 Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5364530043259413040, guid: 717ac4cb23d9d1845bd39081fe3414c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 717ac4cb23d9d1845bd39081fe3414c3, type: 3}
 --- !u!4 &1115741823 stripped
@@ -9129,6 +9484,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -9309,6 +9669,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_01 Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5364530043259413040, guid: 717ac4cb23d9d1845bd39081fe3414c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 717ac4cb23d9d1845bd39081fe3414c3, type: 3}
 --- !u!4 &1126296552 stripped
@@ -9347,6 +9712,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_04 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
@@ -9457,6 +9827,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_02 Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -9565,6 +9940,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -9675,6 +10055,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -9783,6 +10168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -9893,6 +10283,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_04 Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -10001,6 +10396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -10111,6 +10511,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -10219,6 +10624,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -10329,6 +10739,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_04 Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -10438,6 +10853,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -10546,6 +10966,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -10686,6 +11111,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_04 Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -10794,6 +11224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -10904,6 +11339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -11012,6 +11452,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -11258,6 +11703,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -11367,6 +11817,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -11475,6 +11930,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_04 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
@@ -11630,6 +12090,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -11784,6 +12249,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -11892,6 +12362,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -12056,6 +12531,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -12164,6 +12644,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -12274,6 +12759,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -12382,6 +12872,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -12492,6 +12987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -12600,6 +13100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -12710,6 +13215,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_02 Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -12818,6 +13328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -12973,6 +13488,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_04 Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -13081,6 +13601,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_04 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
@@ -13191,6 +13716,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_06 Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
       propertyPath: m_RootOrder
@@ -13299,6 +13829,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -13499,6 +14034,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -13652,6 +14192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -13978,6 +14523,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_04 Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -14158,6 +14708,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -14266,6 +14821,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_06 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
@@ -14376,6 +14936,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -14469,6 +15034,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_06 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
@@ -14579,6 +15149,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -14687,6 +15262,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -14873,6 +15453,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_04 Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -14981,6 +15566,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -15260,6 +15850,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -15369,6 +15964,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -15473,73 +16073,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 530658014, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1208004143, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: m_Name
-      value: LivesAmountText (TMP) (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1208004145, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: m_text
-      value: 72
-      objectReference: {fileID: 0}
-    - target: {fileID: 1488355756, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 27.1261
-      objectReference: {fileID: 0}
-    - target: {fileID: 1488355756, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 27.1261
-      objectReference: {fileID: 0}
-    - target: {fileID: 1488355756, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.00000071526
-      objectReference: {fileID: 0}
-    - target: {fileID: 1488355756, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.00001204
-      objectReference: {fileID: 0}
-    - target: {fileID: 1488355757, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 775378754, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 21300000, guid: 861ca38ba51610d46988f826732f9a39,
-        type: 3}
-    - target: {fileID: 1718057911, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: healthText
+      objectReference: {fileID: 6902405321701573005}
+    - target: {fileID: 818338220, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1885915315}
+      objectReference: {fileID: 6902405321701573005}
     - target: {fileID: 1718057911, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: spriteSlime
+      propertyPath: loadingScreen
       value: 
-      objectReference: {fileID: 2060112629}
-    - target: {fileID: 1718057911, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: spritePlayer
-      value: 
-      objectReference: {fileID: 1909107873}
-    - target: {fileID: 1718057911, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: rotationSpeed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1718057911, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
-      propertyPath: extraWaitingTime
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 348526659}
     - target: {fileID: 1718057911, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
       propertyPath: loadingProgressBar
       value: 
       objectReference: {fileID: 1760601837}
-    - target: {fileID: 6285200094893298329, guid: 2660d45e329f38648ad41c1ec75a5c4a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6285200095320074530, guid: 2660d45e329f38648ad41c1ec75a5c4a,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevelWithScreen
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6902405321701573005}
     - target: {fileID: 6285200095798370665, guid: 2660d45e329f38648ad41c1ec75a5c4a,
         type: 3}
       propertyPath: m_Name
@@ -15652,39 +16206,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6285200096158802552, guid: 2660d45e329f38648ad41c1ec75a5c4a,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6285200096158802552, guid: 2660d45e329f38648ad41c1ec75a5c4a,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6902405321701573005}
-    - target: {fileID: 6285200096158802552, guid: 2660d45e329f38648ad41c1ec75a5c4a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UnPause
-      objectReference: {fileID: 0}
-    - target: {fileID: 6285200096158802552, guid: 2660d45e329f38648ad41c1ec75a5c4a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2660d45e329f38648ad41c1ec75a5c4a, type: 3}
---- !u!114 &1885915315 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1208004145, guid: 2660d45e329f38648ad41c1ec75a5c4a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1885915314}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1886697428
 GameObject:
   m_ObjectHideFlags: 0
@@ -15755,6 +16281,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -15849,6 +16380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -15995,12 +16531,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1909107873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1017742840, guid: 2660d45e329f38648ad41c1ec75a5c4a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1885915314}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1925508190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16012,6 +16542,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -16106,6 +16641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -16216,6 +16756,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -16324,6 +16869,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_04 Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273396041788844578, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8051199756254195864, guid: 4ae69839b2cc6d949ab91c7c4ddfa1c5,
         type: 3}
@@ -16434,6 +16984,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_06 Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
       propertyPath: m_RootOrder
@@ -16543,6 +17098,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -16651,6 +17211,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_05 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
@@ -16794,12 +17359,6 @@ Transform:
   m_Father: {fileID: 1392447209}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 630, z: 0}
---- !u!1 &2060112629 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 50710743, guid: 2660d45e329f38648ad41c1ec75a5c4a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1885915314}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2065594982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16811,6 +17370,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_06 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830721100934730020, guid: c63a14aba0e4eca4884dd065e2e29eaa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3171498939624623006, guid: c63a14aba0e4eca4884dd065e2e29eaa,
         type: 3}
@@ -16921,6 +17485,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -17029,6 +17598,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -17208,6 +17782,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_05 Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2393711507129857867, guid: 1ec81a9a798893048b27990d3eff2b76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3059064834806853105, guid: 1ec81a9a798893048b27990d3eff2b76,
         type: 3}
       propertyPath: m_RootOrder
@@ -17316,6 +17895,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -17426,6 +18010,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -17535,6 +18124,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_03 Variant (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
       propertyPath: m_RootOrder
@@ -17643,6 +18237,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_03 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 496583614779541254, guid: 3e23e448994317e4cb863c4800517fed,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 986262506488372668, guid: 3e23e448994317e4cb863c4800517fed,
         type: 3}
@@ -17797,6 +18396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_02 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697573751778200473, guid: 60b17280ed8a9a64fa17bec1229055e4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366868935461310755, guid: 60b17280ed8a9a64fa17bec1229055e4,
         type: 3}
@@ -17985,6 +18589,154 @@ Transform:
   m_Father: {fileID: 1392447209}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 630, z: 0}
+--- !u!1001 &219585950828611460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.753
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.703
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.527
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444474, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444479, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_Name
+      value: MouseHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 219585950197444479, guid: 24ae1720c88add949bc28bcbca3e7890,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24ae1720c88add949bc28bcbca3e7890, type: 3}
+--- !u!1001 &5521670836264698165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.192
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.527
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190103, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190122, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_Name
+      value: SlimeHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521670836051190122, guid: 56a910a61ebffcc489494d96c55078fd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56a910a61ebffcc489494d96c55078fd, type: 3}
 --- !u!1001 &6143066754437977161
 PrefabInstance:
   m_ObjectHideFlags: 0

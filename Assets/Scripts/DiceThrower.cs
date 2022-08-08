@@ -49,7 +49,7 @@ public class DiceThrower : MonoBehaviour
                 }
                 else if (CurrentAmountOfThrows <= 0)
                 {
-                    SceneManager.LoadScene("GameOver");//make asyncloadscene with loading screen
+                    InterfaceManager.Instance.LoadLevelWithScreen("GameOver");
                 }
             }
             else

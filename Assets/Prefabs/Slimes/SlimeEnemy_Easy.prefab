@@ -224,7 +224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diceSpawnpoint: {fileID: 1707163107}
-  amountOfThrowsText: {fileID: 0}
   isTurn: 0
   canThrow: 0
 --- !u!114 &1663280355
@@ -240,6 +239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hurtSound: {fileID: 0}
+  hurtEffect: {fileID: 5521670836051190122, guid: 56a910a61ebffcc489494d96c55078fd,
+    type: 3}
   health: 2
   healthUI: {fileID: 0}
   onHealthZero:

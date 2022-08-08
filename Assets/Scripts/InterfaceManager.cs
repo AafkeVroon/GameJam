@@ -51,6 +51,7 @@ public class InterfaceManager : MonoBehaviour
 
     private void Start()
     {
+        gameManager = GameManager.Instance;
         currentScene = SceneManager.GetActiveScene().buildIndex;
         PlayerPrefs.SetInt("CurrentScene", currentScene);
     }
