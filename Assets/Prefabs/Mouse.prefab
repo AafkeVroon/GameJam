@@ -115,13 +115,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6903463533773330922}
+  - component: {fileID: 1806719789}
   - component: {fileID: 6903463533773330917}
   - component: {fileID: 1101915169}
   - component: {fileID: 1101915168}
   - component: {fileID: 1806719787}
   - component: {fileID: 1806719788}
   - component: {fileID: 1806719784}
-  - component: {fileID: 1806719789}
   - component: {fileID: 1806719782}
   m_Layer: 6
   m_Name: Mouse
@@ -148,6 +148,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -5.473, z: 0}
+--- !u!65 &1806719789
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903463533773330923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5009258, y: 7.955468, z: 3.0203283}
+  m_Center: {x: 0.13373204, y: 2.56051, z: 0.06377188}
 --- !u!95 &6903463533773330917
 Animator:
   serializedVersion: 4
@@ -277,19 +290,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2873d6e9bd948764eb8dd7ae462e3803, type: 3}
   - {fileID: 8300000, guid: 555a252a6866b304887719c7c2d392a7, type: 3}
   - {fileID: 8300000, guid: 2cd2bae4af7723d4aa6a9cfc65c3d904, type: 3}
---- !u!65 &1806719789
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6903463533773330923}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.5009258, y: 7.955468, z: 3.0203283}
-  m_Center: {x: 0.13373204, y: 2.56051, z: 0.06377188}
 --- !u!82 &1806719782
 AudioSource:
   m_ObjectHideFlags: 0

@@ -12,10 +12,10 @@ public class TileChecker : MonoBehaviour
         movement = followObject.GetComponent<Movement>();
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider other)//Make it so when player/enemy stops moving then do 1x check for tiles,players,enemies,and obstacles
     {
-        if (other.gameObject.CompareTag("Tile") || other.gameObject.CompareTag("Gate")
-             || other.gameObject.CompareTag("Checker"))
+        if (!other.gameObject.CompareTag("Tile") || !other.gameObject.CompareTag("Gate")
+             || !other.gameObject.CompareTag("Checker"))
         {
             switch (direction)
             {
@@ -30,6 +30,24 @@ public class TileChecker : MonoBehaviour
                     break;
                 case 3:
                     movement.goRight = true;
+                    break;
+            }
+        }
+        else
+        {
+            switch (direction)
+            {
+                case 0:
+                    movement.goForward = false;
+                    break;
+                case 1:
+                    movement.goBack = false;
+                    break;
+                case 2:
+                    movement.goLeft = false;
+                    break;
+                case 3:
+                    movement.goRight = false;
                     break;
             }
         }

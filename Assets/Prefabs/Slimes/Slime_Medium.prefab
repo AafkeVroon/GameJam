@@ -46,6 +46,8 @@ GameObject:
   - component: {fileID: 905485717}
   - component: {fileID: 905485716}
   - component: {fileID: 905485715}
+  - component: {fileID: 1242124877}
+  - component: {fileID: 1242124876}
   m_Layer: 7
   m_Name: Slime_Medium
   m_TagString: Enemy
@@ -115,22 +117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81590bba2db2fbb4a91469dea4b234e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desiredWalkTime: 0.65
   tileCheckerPrefab: {fileID: 7412906721748837891, guid: b139b765544520f44a3803b59fa89082,
     type: 3}
-  movement: 0
-  attackRange: 3
-  attackDamage: 3
-  attackTime: 1
-  attackPointCost: 3
-  hitLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  goForward: 0
-  goBack: 0
-  goLeft: 0
-  goRight: 0
-  enemyFound: 0
 --- !u!114 &905485717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diceSpawnpoint: {fileID: 648194997}
-  amountOfThrowsText: {fileID: 0}
   isTurn: 0
   canThrow: 0
 --- !u!114 &905485715
@@ -174,6 +161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cefc6b91106a654fa44b6d677004d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hurtSound: {fileID: 0}
+  hurtEffect: {fileID: 5521670836051190122, guid: 5d9e013539552cd4fb82fa9830a23aee,
+    type: 3}
   health: 5
   healthUI: {fileID: 0}
   onHealthZero:
@@ -182,6 +172,46 @@ MonoBehaviour:
   Damage: {fileID: 0}
   ShowHitAnim: 1
   isShowing: 0
+--- !u!114 &1242124877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358743068328383522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d77460fb57b2842b86a3e08e025c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredWalkTime: 0.6
+  tileCheckerPrefab: {fileID: 7412906721748837891, guid: b139b765544520f44a3803b59fa89082,
+    type: 3}
+  walkSound: {fileID: 0}
+  goForward: 0
+  goBack: 0
+  goLeft: 0
+  goRight: 0
+--- !u!114 &1242124876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358743068328383522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 296b6fdac268eda468c7efa3cff728af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1
+  attackDamage: 2
+  attackTime: 1
+  attackPointCost: 2
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  attackSounds: []
 --- !u!1001 &5358743067488749257
 PrefabInstance:
   m_ObjectHideFlags: 0

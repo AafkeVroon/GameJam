@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] private GameObject tileCheckerPrefab;
-
     public bool NextMove { get { return nextMove; } set { nextMove = value; } }
 
     private PointScript pointScript;
@@ -45,18 +43,31 @@ public class EnemyAI : MonoBehaviour
     {
         if (enemyAttack.EnemyFound)
         {
+            Debug.Log("ENEMYFOUNNDDD");
             float rnd = Random.Range(0, 101);
             if (rnd < 20)//20
+            {
+                Debug.Log("TOLOWNUMBERGOMOVEW");
                 enemyMovement.Move();
+            }
             else
             {
                 if (!pointScript.CheckEnoughPoints(2))//attackPointCost
+                {
+                    Debug.Log("NOMOREPOINTASTOATTACKSOMOVEME");
                     enemyMovement.Move();
+                }
                 else
+                {
+                    Debug.Log("ATTACKMATYEYKILLHIM");
                     enemyAttack.AttackTarget();
+                }
             }
         }
         else
+        {
+            Debug.Log("GOTTATOMOVEAWAY");
             enemyMovement.Move();
+        }
     }
 }

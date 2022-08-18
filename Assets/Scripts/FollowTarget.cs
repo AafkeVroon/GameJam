@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowTarget : MonoBehaviour
 {
-    public Transform target;
-    [SerializeField]private float smoothSpeed = 0.125f;
+    [SerializeField] private float smoothSpeed = 0.125f;
     [SerializeField] private Vector3 offSet;
+
+    public Transform target;
 
     private GameManager gameManager;
 

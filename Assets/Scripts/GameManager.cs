@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int amountOfDices = 3;
     [SerializeField] private float throwForce = 5;
     [SerializeField] private int maxPoints;
+    [SerializeField] private float cameraChangeSpeed = 5;
     [SerializeField] private GameObject dicePrefab;
     [SerializeField] private List<GameObject> characterPrefabs;
     [SerializeField] private List<GameObject> characterSpawnpoints;
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     public int AmountOfDices { get { return amountOfDices; } }
     public GameObject PlayerObject { get { return characters[0]; } }
 
+    private Camera cam;
     private InterfaceManager interfaceManager;
     private int amountOfCharacters;
     private int currentTurn;
@@ -45,6 +47,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        cam = Camera.main;
         interfaceManager = InterfaceManager.Instance;
     }
 
@@ -113,6 +116,7 @@ public class GameManager : MonoBehaviour
         if (currentTurn < characters.Count - 1)
         {
             currentTurn++;
+            cam.GetComponent<FollowTarget>().target = characters[currentTurn].transform;
             interfaceManager.spritePlayer.SetActive(false);
             interfaceManager.spriteSlime.SetActive(true);
             characters[currentTurn].GetComponent<DiceThrower>().isTurn = true;
@@ -121,6 +125,7 @@ public class GameManager : MonoBehaviour
         else
         {
             currentTurn = 0;
+            cam.GetComponent<FollowTarget>().target = characters[currentTurn].transform;
             interfaceManager.spritePlayer.SetActive(true);
             interfaceManager.spriteSlime.SetActive(false);
             characters[currentTurn].GetComponent<DiceThrower>().isTurn = true;

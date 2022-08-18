@@ -115,7 +115,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8434530398517990703}
-  - component: {fileID: 8434530398517990702}
   - component: {fileID: 1663280349}
   - component: {fileID: 1663280352}
   - component: {fileID: 1663280351}
@@ -124,6 +123,7 @@ GameObject:
   - component: {fileID: 1914781707}
   - component: {fileID: 881475203490095733}
   - component: {fileID: -4702283068503294478}
+  - component: {fileID: 1974727541}
   m_Layer: 7
   m_Name: SlimeEnemy_Easy
   m_TagString: Enemy
@@ -149,26 +149,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8434530398517990702
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8434530398517990700}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ed747a17ed414a74a8d3699113970548, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &1663280349
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -194,8 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81590bba2db2fbb4a91469dea4b234e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileCheckerPrefab: {fileID: 7412906721748837891, guid: b139b765544520f44a3803b59fa89082,
-    type: 3}
 --- !u!114 &1663280351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,6 +363,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1974727541
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8434530398517990700}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed747a17ed414a74a8d3699113970548, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &8797829931417349303
 PrefabInstance:
   m_ObjectHideFlags: 0

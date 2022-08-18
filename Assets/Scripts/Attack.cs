@@ -50,15 +50,18 @@ public class Attack : MonoBehaviour
 
     public virtual void AttackTarget()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hit, attackRange, hitLayer))
-        {
-            IsAttacking = true;
-            movement.CanMove = false;
-            anim.SetTrigger("Attack");
+        //if (Physics.Raycast(transform.position, transform.forward, out hit, attackRange, hitLayer))
+        //{
+        Debug.Log("IATTACKEDDDD");
+        IsAttacking = true;
+        movement.CanMove = false;
+        anim.SetTrigger("Attack");
+        if (attackSounds != null)
             audioSource.PlayOneShot(attackSounds[Random.Range(0, attackSounds.Length)]);
-            hit.collider.gameObject.GetComponent<Health>().ModifyHealth(-attackDamage);
-            StartCoroutine(AttackCooldown());
-        }
+        //hit.collider.gameObject.GetComponent<Health>().ModifyHealth(-attackDamage);
+        Enemy.GetComponent<Health>().ModifyHealth(-attackDamage);
+        StartCoroutine(AttackCooldown());
+        //}
     }
 
     public virtual IEnumerator AttackCooldown()
